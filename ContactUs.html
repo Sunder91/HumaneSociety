@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<header>
+<meta charset="utf-8">
+<title>Humane Society of Crookston, MN</title>
+<link href="MainTemplate.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--<center><img src="Images/Adam Sunder White Blue.png" alt="Adam Sunder Web and Graphic Designer"></center>-->
+<center>Humane Society of Crookston Logo Here</center>
+</header>
+
+<body>
+<h1>Contact Us</h1>
+<div class="container">
+<center>
+    <nav>
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Dogs.html">Dogs at the Shelter</a></li>
+      <li><a href="Cats.html">Cats at the Shelter</a></li>      
+      <li><a href="WaysToHelp.html">Ways To Help</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+     
+    </ul>
+</nav>
+</center>
+<p>This dog pic will be where at least one of the slideshows for animal spotlight will go.</p>
+  <article class="animalspotlight">
+
+<script type="text/javascript">
+  var dogPics;
+  function dogInfo (linkTarget) { //when clicked this will open more info and pics on animals.  Want this to load from database with php
+    dogPics = window.open ("_self", "", "width=800,height=600");
+    dogPics.moveTo(400,50);
+    dogPics.document.write("<link href='FunctionTemplate.css' rel='stylesheet' type='text/css'");
+    dogPics.document.writeln("<header><h3>Shadow</h3></header>")
+    dogPics.document.writeln("<div class='nwanimalspotlight'><img src='Images/Shadow4.jpg' width='200' height='200'></div>");
+    
+    dogPics.document.writeln("<center><h3>Shadow</h3></center>");
+    dogPics.document.writeln("</br>Age: 3-4 years");
+    dogPics.document.writeln("</br> Price:  $160");
+    dogPics.document.writeln("</br>Good with children:  Unknown");
+    dogPics.document.writeln("</br>Good with other dogs: Yes");
+    dogPics.document.writeln("</br>Good with other cats: Yes");
+    dogPics.document.writeln("</br>About Me:  I am a good boy that loves treats.  I love to play fetch and go for walks.  If you want a dog that loves nothing more than to cuddle with you I am your dog!");
+
+
+  }
+
+</script>
+
+<p><img src="Images/Shadow4.jpg" width="250" height="250" onclick="dogInfo();"></p>
+ </article>
+ 
+ 
+   <div class="bottomtabs">
+   <div>adoptable dogs<img src="Images/Shadow4.jpg" width="150" height="150"></div>
+   <div>adoptable cats<img src="Images/Shadow4.jpg" width="150" height="150"></div>
+   <div>Other info</div>
+ </div>
+ 
+  <!-- end .content --></article>
+  <footer>
+  </footer>
+  <!-- end .container --></div>
+</body>
+</html>

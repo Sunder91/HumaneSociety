@@ -1,0 +1,126 @@
+<?php
+include('session.php');
+?>
+<!doctype html>
+<!--Need to get the Ways to help page created.  Need to start working on making forms with PHP to add data for animals.  Need to finish working on Gallery.  Gallery needs slideshow added to all animals pulled from database as well as get galleryfunction page updated, fine tuned and pulled from database.  Add pagination to gallery pages?  Need to create a login for users to login and submit data.  All around clean up site.  Start working on new logo for Humane Society?-->
+<html>
+<header>
+<?php
+//Use this to connect to server
+$servername = "localhost";
+$username = "Adam";
+$password = "Sund3r09!";
+$dbname = "hsdb";
+
+//Create Connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn){
+    die("Connection Failed: ".mysqli_connect_error());
+}
+?>
+<meta charset="utf-8">
+<title>Humane Society of Crookston, MN</title>
+<link href="FormTemplate.css" rel="stylesheet" type="text/css">
+<nav role="main">
+    <ul>
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Dogs.php">Dogs</a></li>
+      <li><a href="Cats.html">Cats</a></li>      
+      <li><a href="WaysToHelp.html">Ways To Help</a></li>
+      <li><a href="ContactUs.html">Contact Us</a></li>
+      <li><a href="AnimalForm.php">Animal Form</a></li>
+    </ul>
+</nav>
+<h3>Humane Society of Polk County Logo Here</h3>
+<h4>Non-Profit/Non-Kill Animal Shelter</h4>
+</header>
+<body>
+<div class="sidebar1"> 
+  This is where the input data will go for now.<br>
+  <?php
+  //create connection
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
+  //check connection
+  if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+  }
+  $sql = "SELECT CatName, CatBio FROM cats ORDER BY ID Desc" ;
+  $result = mysqli_query($conn, $sql);
+  if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo $row["CatName"]. " " . $row["CatBio"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+mysqli_close($conn);
+?>
+
+</div>
+<div class="sidebar2">
+  <p>This is a test to see how this looks and how the sidebars will effect the placement of the animal spotlight.</p>
+</div>
+<span class="afbg">
+      <span class=afdesc><h3>Welcome <?php echo $login_session; ?></h3></span>
+    <form class="animalform" action="AnimalFormAction.php" method="post" enctype="multipart/form-data">
+        Name:&nbsp;<input type="text" name="CatName" id="CatName" required></br>
+        </br>&nbsp;&nbsp;&nbsp;Bio:&nbsp;&nbsp;<textarea name="CatBio" id="CatBio" rows="5" cols="40" required></textarea></br>
+        Good with Dogs:<input type="radio" id="yes" name="GoodwDogs" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="GoodwDogs" value="no">
+        <label for="no">no</label>
+        <input type="radio" id="unknown" name="GoodwCats" value="unknown">
+        <label for="unknown">unknown</label></br>
+        Good with Cats:<input type="radio" id="yes" name="GoodwCats" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="GoodwCats" value="no">
+        <label for="no">no</label>
+        <input type="radio" id="unknown" name="GoodwCats" value="unknown">
+        <label for="unknown">unknown</label></br>
+        Good with Kids:<input type="radio" id="yes" name="GoodwKids" value="yes" required>
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="GoodwKids" value="no">
+        <label for="no">no</label>
+        <input type="radio" id="unknown" name="GoodwKids" value="unknown">
+        <label for="unknown">unknown</label></br>
+        Select image to upload:
+        <input type="file" Name="CatPic" Id="CatPic" required></br>
+        <!--need to get a function in place for automatic pricing-->
+        <input class="button3" type="Submit" value="Submit">
+</form> 
+        <form action="logout.php" class="animalform">
+        <input class="button4" type="submit" value="Sign Out">
+        </form>
+        </span>
+        <script>
+        $(document).ready(function(){
+          $('#insert').click(function(){
+            var DogPic = $('#image').val();
+            if(DogPic = '')
+            {
+                alert("Please Select Image");
+                return false;
+            }
+            else
+            {
+              var extension = $('#image').val().split('.').pop().toLowercase();
+              if(jQuery.inArray(extension, ['gif', 'png', 'jpg', 'jpeg']) == -1)
+              {
+                alert('Invalid Image File');
+                $('#image').val('');
+                return false;
+              }
+            }
+          });
+        });
+        </script>
+      
+
+      
+        </br>
+  <footer>
+  </footer>
+  <!-- end .container -->
+</body>
+</html>
