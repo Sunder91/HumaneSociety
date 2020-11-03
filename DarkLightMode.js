@@ -12,7 +12,7 @@ function DarkLightMode(){
     }
     }
     
-
+/*
         var theme = document.getElementById('theme');
         if (theme) {
             theme.addEventListener('change', function(event){
@@ -29,3 +29,4 @@ function DarkLightMode(){
                 }
             };
         }
+*/
