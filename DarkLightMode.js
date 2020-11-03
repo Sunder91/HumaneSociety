@@ -1,6 +1,6 @@
 
 function DarkLightMode(){
-    const theme = document.querySelector("#theme-link"); /*this slects the stylesheet*/
+    const theme = document.querySelector("#theme"); /*this slects the stylesheet*/
     if (theme.getAttribute("href") == "MainTemplate.css"){
         theme.href = "MainTemplateDark.css";
     }else{
@@ -8,3 +8,20 @@ function DarkLightMode(){
     }
     }
     
+
+        var theme = document.getElementById('theme');
+        if (theme) {
+            theme.addEventListener('change', function(event){
+                resetTheme(); //update color theme
+            });
+
+            function themeSwitch() {
+                if (theme.checked) {
+                    document.body.setAttribute('href', 'MainTemplate.css');
+                    localStorage.setItem('href', 'MainTemplate.css');
+                }else{
+                    document.body.removeAttribute('href');
+                    localStorage.removeItem(themeSwitch);
+                }
+            };
+        }
