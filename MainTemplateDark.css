@@ -1,7 +1,7 @@
 @charset "utf-8";
 body {
 	font:"Times New Roman";
-	background-image:url(Images/bgpic.jpg);
+	/*background-image:url(Images/bgpic.jpg);*/
 	width:85%;
     background-size:85%;
     background-color:black;
@@ -136,37 +136,37 @@ nav a:hover, nav a:active, nav a:focus {
 }
 
 header {
-	background-color:black;
+	background-color: slategray;
 	color: white;
 	height: auto;
 	padding-top: 10px;
-	padding-bottom: 15px;
+	padding-bottom:10px;
 	padding-left: 5px;
 	padding-right: 5px;
-	margin-bottom:25px;
+	margin-bottom:0px;
 	border-style: solid;
-	border-color: black;
+	border-color: grey;
 	}
 	
     @media screen and (max-width:900px){
 	header{
-	background-color:black;
+	background-color: slategray;
+	color:white;
 	height: auto;
 	overflow: auto;
 	margin: 0;
 	padding: 0;
-	color:white;
 	}
 }
     @media screen and (max-width:480px){
 	header{
+	background-color: slategray;
+	color:white;
 	background-repeat:repeat;
 	margin: 0;
 	padding: 0;
-	background-color:black;
 	height: auto;
 	overflow: auto;
-	color:white;
 	}
 }
 .mainbody {
@@ -294,17 +294,29 @@ div.bottomtabs img {
 
 } */
 .sidebar1 {
+	background-color:slategray;
+	color: black;
 	float: left;
-	width: 20%;
+	width: 33%;
 	height:420px;
-	background-color:transparent;
+	margin: 0px, 0px, 0px, 0px;
 	padding-bottom:0;
-	border-style: solid;
+	border-radius: 5px;
+	border-left-style: solid;
 	border-color: black;
+	border-width: medium;
 }
     @media screen and (max-width:900px){
 .sidebar1 {
-	display:none;
+	background-color:slategray;
+	color: black;
+	float: left;
+	width: 49%;
+	height:420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;
+
 	}
 }
 	@media screen and (max-width:480px) {
@@ -313,18 +325,60 @@ div.bottomtabs img {
 	}
 }
 
-.sidebar2 {
+.midbody {
+	background-color:slategray;
+	color: black;
+	float: left;
+	width: 33%;
+	height:420px;
+	margin: 0px, 0px, 0px, 0px;
+	padding:0px, 0px, 0px, 0px;
+	border-radius: 5px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-color: black;
+	border-width: medium;	
+	
+}
+    @media screen and (max-width:900px){
+.midbody {
+	background-color:slategray;
+	color: black;
 	float: right;
-	width: 20%;
-	height: 420px;
-	background-color:transparent;
-	padding-bottom:0;
+	width: 49%;
+	height:420px;
+	padding:0;
 	border-style: solid;
 	border-color: black;
+	}
+}
+	@media screen and (max-width:480px) {
+.midbody {
+	display:none;
+	}
+}
+
+.sidebar2 {
+	background-color:slategray;
+	color: black;
+	float: left;
+	width: 33%;
+	height: 420px;
+	margin: 0px, 0px, 0px, 0px;
+	border-radius: 5px;
+	border-right-style: solid;
+	border-width: medium;
 }
     @media screen and (max-width:900px){
 .sidebar2 {
-	display:none;
+	background-color:slategray;
+	color: black;
+	float: right;
+	width: 100%;
+	height: 420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;
 	}
 }
 	@media screen and (max-width:480px) {
@@ -332,6 +386,7 @@ div.bottomtabs img {
 	display:none;
 	}
 }
+
 
 .content {
 	padding: 10px 0;
