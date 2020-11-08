@@ -147,6 +147,7 @@ header {
 	border-style: solid;
 	border-color: grey;
 	border-radius: 5px;
+	width:100%;
 	}
 	
     @media screen and (max-width:900px){

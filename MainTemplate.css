@@ -34,10 +34,159 @@ body {
 	padding: 0;
 	background-color:white;
 	color:black;
+	
 	}
 }
 
+header {
+	background-color: darkgray;
+	color:black;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom:0px;
+	border-style: solid;
+	border-color: grey;
+	border-radius: 5px;
+	width: 100%;
+	}
+	
+    @media screen and (max-width:900px){
+	header{
+	background-color:darkgray;
+	color:black;
+	height: auto;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	}
+}
+    @media screen and (max-width:480px){
+	header{
+	background-color: darkgray;
+	color:black;
+	background-repeat:repeat;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	overflow: auto;
+	}
+} 
 
+.sidebar1 {
+	background-color:silver;
+	color: black;
+	float: left;
+	width: 33%;
+	height:420px;
+	margin: 0px, 0px, 0px, 0px;
+	padding-bottom:0;
+	border-radius: 5px;
+	border-left-style: solid;
+	border-color: black;
+	border-width: medium;
+}
+    @media screen and (max-width:900px){
+.sidebar1 {
+	background-color:silver;
+	color: black;
+	float: left;
+	width: 49%;
+	height:420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;
+
+	}
+}
+	@media screen and (max-width:480px) {
+.sidebar1 {
+	background-color:silver;
+	color: black;
+	float: left;
+	width: 100%;
+	height:420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;
+	}
+}
+
+.midbody {
+	background-color:whitesmoke;
+	color: black;
+	float: left;
+	width: 33%;
+	height:420px;
+	margin: 0px, 0px, 0px, 0px;
+	padding:0px, 0px, 0px, 0px;
+	border-radius: 5px;
+	border-left-style: solid;
+	border-right-style: solid;
+	border-color: black;
+	border-width: medium;	
+	
+}
+    @media screen and (max-width:900px){
+.midbody {
+	background-color:whitesmoke;
+	color: black;
+	float: right;
+	width: 49%;
+	height:420px;
+	padding:0;
+	border-style: solid;
+	border-color: black;
+	}
+}
+	@media screen and (max-width:480px) {
+.midbody {
+	background-color:whitesmoke;
+	color: black;
+	float: left;
+	width: 100%;
+	height:420px;
+	padding:0;
+	border-style: solid;
+	border-color: black;	}
+}
+
+.sidebar2 {
+	background-color:silver;
+	color: black;
+	float: left;
+	width: 33%;
+	height: 420px;
+	margin: 0px, 0px, 0px, 0px;
+	border-radius: 5px;
+	border-right-style: solid;
+	border-width: medium;
+}
+    @media screen and (max-width:900px){
+.sidebar2 {
+	background-color:silver;
+	color: black;
+	float: right;
+	width: 100%;
+	height: 420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;
+	}
+}
+	@media screen and (max-width:480px) {
+.sidebar2 {
+	background-color:silver;
+	color: black;
+	float: left;
+	width: 100%;
+	height:420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;	}
+}
 
 ul, ol, dl { 
 	padding: 0;
@@ -82,7 +231,7 @@ a:hover, a:active, a:focus {
 nav{
 	font-family:Arial; 
 	font-weight:bold;
-	color: white;
+	color: black;
 	max-width:45%;
 	padding:10px, 5px, 20px, 5px;
 	font-size: 20px;
@@ -96,7 +245,7 @@ nav ul{
 nav li {
 	border-bottom:inherit;
 	display:inline;
-	color:white;
+	color:black;
 
 }
     @media screen and (max-width:900px){
@@ -104,7 +253,7 @@ nav li {
 	display:inline;
 	font-family:Arial;
 	font-size:12px;
-	color:white;
+	color:black;
 	}
 }
     @media screen and (max-width:480px){
@@ -112,7 +261,7 @@ nav li {
 	display:inline;
 	font-family:Arial;
 	font-size:12px;
-	color:white;
+	color:black;
 	}
 }
 
@@ -121,7 +270,7 @@ nav a, nav a:visited {
 	display:inherit;
 	text-decoration: none;
 	background-color:transparent;
-	color:white;
+	color:black;
 }
 nav a:hover, nav a:active, nav a:focus { 
 	background-color:transparent;
@@ -135,41 +284,8 @@ nav a:hover, nav a:active, nav a:focus {
 	margin: 0 auto; 
 }
 
-header {
-	background-color: darkgray;
-	color:black;
-	height: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 5px;
-	padding-right: 5px;
-	margin-bottom:0px;
-	border-style: solid;
-	border-color: grey;
-	border-radius: 5px;
-	}
-	
-    @media screen and (max-width:900px){
-	header{
-	background-color:darkgray;
-	color:black;
-	height: auto;
-	overflow: auto;
-	margin: 0;
-	padding: 0;
-	}
-}
-    @media screen and (max-width:480px){
-	header{
-	background-color: darkgray;
-	color:black;
-	background-repeat:repeat;
-	margin: 0;
-	padding: 0;
-	height: auto;
-	overflow: auto;
-	}
-}
+/*header info used to be here*/
+
 .mainbody {/*why does this stick out a little extra at 100% */
 	display: flex;
 	width: 100%;
@@ -177,6 +293,7 @@ header {
 	background-color: transparent;
 	border-style: solid;
 	border-color:gray;
+	border-radius: 5px;
 }
 
 .gallery {	/*these next few will relate directly to the gallery pages and how they work*/
@@ -343,118 +460,9 @@ div.bottomtabs img {
 	padding: 5px;
 
 } */
-.sidebar1 {
-	background-color:lightslategray;
-	color: black;
-	float: left;
-	width: 33%;
-	height:420px;
-	margin: 0px, 0px, 0px, 0px;
-	padding-bottom:0;
-	border-radius: 5px;
-	border-left-style: solid;
-	border-color: black;
-	border-width: medium;
-}
-    @media screen and (max-width:900px){
-.sidebar1 {
-	background-color:lightslategray;
-	color: black;
-	float: left;
-	width: 49%;
-	height:420px;
-	padding-bottom:0;
-	border-style: solid;
-	border-color: black;
 
-	}
-}
-	@media screen and (max-width:480px) {
-.sidebar1 {
-	background-color:lightslategray;
-	color: black;
-	float: left;
-	width: 100%;
-	height:420px;
-	padding-bottom:0;
-	border-style: solid;
-	border-color: black;
-	}
-}
+/*sidebar info used to be here*/
 
-.midbody {
-	background-color:lightslategray;
-	color: black;
-	float: left;
-	width: 33%;
-	height:420px;
-	margin: 0px, 0px, 0px, 0px;
-	padding:0px, 0px, 0px, 0px;
-	border-radius: 5px;
-	border-left-style: solid;
-	border-right-style: solid;
-	border-color: black;
-	border-width: medium;	
-	
-}
-    @media screen and (max-width:900px){
-.midbody {
-	background-color:lightslategray;
-	color: black;
-	float: right;
-	width: 49%;
-	height:420px;
-	padding:0;
-	border-style: solid;
-	border-color: black;
-	}
-}
-	@media screen and (max-width:480px) {
-.midbody {
-	background-color:lightslategray;
-	color: black;
-	float: left;
-	width: 100%;
-	height:420px;
-	padding:0;
-	border-style: solid;
-	border-color: black;	}
-}
-
-.sidebar2 {
-	background-color:lightslategray;
-	color: black;
-	float: left;
-	width: 33%;
-	height: 420px;
-	margin: 0px, 0px, 0px, 0px;
-	border-radius: 5px;
-	border-right-style: solid;
-	border-width: medium;
-}
-    @media screen and (max-width:900px){
-.sidebar2 {
-	background-color:lightslategray;
-	color: black;
-	float: right;
-	width: 100%;
-	height: 420px;
-	padding-bottom:0;
-	border-style: solid;
-	border-color: black;
-	}
-}
-	@media screen and (max-width:480px) {
-.sidebar2 {
-	background-color:lightslategray;
-	color: black;
-	float: left;
-	width: 100%;
-	height:420px;
-	padding-bottom:0;
-	border-style: solid;
-	border-color: black;	}
-}
 
 .content {
 	padding: 10px 0;
