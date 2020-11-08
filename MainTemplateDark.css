@@ -322,8 +322,14 @@ div.bottomtabs img {
 }
 	@media screen and (max-width:480px) {
 .sidebar1 {
-	display:none;
-	}
+	background-color:slategray;
+	color: black;
+	float: left;
+	width: 100%;
+	height:420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;	}
 }
 
 .midbody {
@@ -355,8 +361,14 @@ div.bottomtabs img {
 }
 	@media screen and (max-width:480px) {
 .midbody {
-	display:none;
-	}
+	background-color:slategray;
+	color: black;
+	float: left;
+	width: 100%;
+	height:420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;	}
 }
 
 .sidebar2 {
@@ -384,8 +396,14 @@ div.bottomtabs img {
 }
 	@media screen and (max-width:480px) {
 .sidebar2 {
-	display:none;
-	}
+	background-color:slategray;
+	color: black;
+	float: left;
+	width: 100%;
+	height:420px;
+	padding-bottom:0;
+	border-style: solid;
+	border-color: black;	}
 }
 
 
