@@ -76,7 +76,7 @@ header {
 } 
 
 .sidebar1 {
-	background-color:silver;
+	background-color:green;
 	color: black;
 	float: left;
 	width: 33%;
@@ -90,20 +90,20 @@ header {
 }
     @media screen and (max-width:900px){
 .sidebar1 {
-	background-color:silver;
+	background-color:yellowgreen;
 	color: black;
 	float: left;
 	width: 49%;
 	height:420px;
 	padding-bottom:0;
-	border-style: solid;
-	border-color: black;
+	/*border-style: solid;
+	border-color: black;*/
 
 	}
 }
 	@media screen and (max-width:480px) {
 .sidebar1 {
-	background-color:silver;
+	background-color:green;
 	color: black;
 	float: left;
 	width: 100%;
@@ -137,8 +137,8 @@ header {
 	width: 49%;
 	height:420px;
 	padding:0;
-	border-style: solid;
-	border-color: black;
+	/*border-style: solid;
+	border-color: black;*/
 	}
 }
 	@media screen and (max-width:480px) {
