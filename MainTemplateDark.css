@@ -288,7 +288,7 @@ nav a:hover, nav a:active, nav a:focus {
 
 
 .mainbody {
-	display: flex;
+	display: inherit;
 	width: 1141px;
 	justify-content: center;
 	background-color: transparent;
