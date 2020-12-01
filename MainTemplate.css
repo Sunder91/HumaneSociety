@@ -76,7 +76,7 @@ header {
 } 
 
 .sidebar1 {
-	background-color:green;
+	background-color:silver;
 	color: black;
 	float: left;
 	width: 30%;
@@ -90,7 +90,7 @@ header {
 }
     @media screen and (max-width:900px){ 
 .sidebar1 {
-	background-color:yellowgreen;
+	background-color:silver;
 	color: black;
 	float: left;
 	width: 100%;
@@ -117,7 +117,7 @@ header {
 */
 
 .midbody {
-	background-color:whitesmoke;
+	background-color:silver;
 	color: black;
 	float: left;
 	width: 30%;
@@ -133,7 +133,7 @@ header {
 }
     @media screen and (max-width:900px){
 .midbody {
-	background-color:whitesmoke;
+	background-color:silver;
 	color: black;
 	float: left;
 	width: 100%;
@@ -398,7 +398,7 @@ div.bottomtabs img {
   }
   
   .slider {
-	background-color: #ccc;
+	background-color: #219CFF;
 	bottom: 0;
 	cursor: pointer;
 	left: 0;
@@ -409,7 +409,7 @@ div.bottomtabs img {
   }
   
   .slider:before {
-	background-color: #fff;
+	background-color: black;
 	bottom: 4px;
 	content: "";
 	height: 26px;
