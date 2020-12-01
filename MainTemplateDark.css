@@ -289,11 +289,12 @@ nav a:hover, nav a:active, nav a:focus {
 
 .mainbody {
 	display: inherit;
-	width: 1141px;
+	width: 100%;
 	justify-content: center;
 	background-color: transparent;
 	border-style: solid;
 	border-color: black;
+	border-radius:5px;
 }
 
 .gallery {	/*these next few will relate directly to the gallery pages and how they work*/
