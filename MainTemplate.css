@@ -294,7 +294,7 @@ nav a:hover, nav a:active, nav a:focus {
 /*header info used to be here*/
 
 .mainbody {/*why does this stick out a little extra at 100% */
-	display: flex;
+	display: inherit;
 	width: 100%;
 	justify-content: center;
 	background-color: transparent;
