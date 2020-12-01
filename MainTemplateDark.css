@@ -86,7 +86,7 @@ header {
 	border-color: white;
 	border-width: medium;
 }
-    @media screen and (max-width:600px){
+    @media screen and (max-width:900px){
 .sidebar1 {
 	background-color:slategray;
 	color: black;
@@ -128,7 +128,7 @@ header {
 	border-width: medium;	
 	
 }
-    @media screen and (max-width:600px){
+    @media screen and (max-width:900px){
 .midbody {
 	background-color:slategray;
 	color: black;
@@ -164,7 +164,7 @@ header {
 	border-width: medium;
 	border-color: white;
 }
-    @media screen and (max-width:600px){
+    @media screen and (max-width:900px){
 .sidebar2 {
 	background-color:slategray;
 	color: black;
