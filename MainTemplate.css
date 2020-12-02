@@ -15,8 +15,8 @@ body {
     @media screen and (max-width:900px){
 	body{
 	width: 100%;
-	background-size:contain;
-	background-repeat: repeat-y;
+	background-size:cover;
+	/*background-repeat: repeat-y;*/
 	position:center bottom;
 	object-fit: cover;
 	background-position:center;
@@ -335,23 +335,24 @@ div.gallery img {
 }	/*end of the gallery part of page */
 
 
-.bottomtabs {	
-	align-content: stretch;
-	align-content: space-between;
-	float: left;
-	width: cover;
+.bottomtabs {
+	width:max-content;
 	background-color: white;
-	padding: 0px 5px;
-	border: 2px solid gray;
-	margin: 0px 90px;
+	padding: 0px;
+	border: 3px solid white;
+	margin:auto;
 }
 
 div.bottomtabs:hover{
 	border: 2px solid black;
 }
 div.bottomtabs img {
-	justify-content: center;
-	opacity: 1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 250px;
+	max-height: 250px;
+
 
 }
 .bottomtabsdesc {
