@@ -16,6 +16,7 @@ body {
 	body{
 	/*background-image:url(Images/bgpic.jpg);*/
 	background-size:cover;
+	width: 100%;
 	object-fit: cover;
 	background-position:center;
 	background-color:black;
@@ -24,9 +25,10 @@ body {
 	color:white;
 	}
 }
+/*
     @media screen and (max-width:480px){
 	body{
-	/*background-image:url(Images/bgpic.jpgk);*/
+	/*background-image:url(Images/bgpic.jpgk);
 	background-size:cover;
 	background-position:center;
 	object-fit: cover;
@@ -35,15 +37,12 @@ body {
 	background-color:black;
 	color:white;
 	}
-}
+}*/
 header {
 	background-color: slategray;
 	color: white;
 	height: auto;
-	padding-top: 10px;
-	padding-bottom:10px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding:10px, 5px, 10px, 0px;
 	margin-bottom:0px;
 	border-style: solid;
 	border-color: grey;
@@ -61,6 +60,7 @@ header {
 	padding: 0;
 	}
 }
+/*
     @media screen and (max-width:480px){
 	header{
 	background-color: slategray;
@@ -71,7 +71,7 @@ header {
 	height: auto;
 	overflow: auto;
 	}
-}
+}*/
 
 .sidebar1 {
 	background-color:slategray;
@@ -94,8 +94,7 @@ header {
 	width: 100%;
 	height:420px;
 	padding-bottom:0;
-	border-style: solid;
-	border-color: white;
+	
 
 	}
 }
@@ -132,7 +131,7 @@ header {
 .midbody {
 	background-color:slategray;
 	color: black;
-	float: right;
+	float: left;
 	width: 100%;
 	height:420px;
 	padding:0;
@@ -155,7 +154,7 @@ header {
 .sidebar2 {
 	background-color:slategray;
 	color: black;
-	float: left;
+	float: right;
 	width: 30%;
 	height: 420px;
 	margin: 0px, 0px, 0px, 0px;
@@ -168,7 +167,7 @@ header {
 .sidebar2 {
 	background-color:slategray;
 	color: black;
-	float: right;
+	float: left;
 	width: 100%;
 	height: 420px;
 	padding-bottom:0;
@@ -218,12 +217,7 @@ a:visited {
 	text-decoration:none;	
 	}
 }
-@media screen and (max-width:480px){
-a:visited {
-	color:#000000;
-	text-decoration:none;	
-	}
-}
+
 
 a:hover, a:active, a:focus {
 	text-decoration:none;
@@ -235,7 +229,7 @@ nav{
 	font-weight:bold;
 	color: white;
 	max-width:45%;
-	padding:10px, 5px, 20px, 5px;
+	padding:10px, 5px, 20px, 0px;
 	font-size: 20px;
 	float: right;
 	}
@@ -258,17 +252,10 @@ nav li {
 	color:white;
 	}
 }
-    @media screen and (max-width:480px){
-	nav li{ 
-	display:inline;
-	font-family:Arial;
-	font-size:12px;
-	color:white;
-	}
-}
+   
 
 nav a, nav a:visited { 
-	padding: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 0px;
 	display:inherit;
 	text-decoration: none;
 	background-color:transparent;
@@ -289,11 +276,12 @@ nav a:hover, nav a:active, nav a:focus {
 
 .mainbody {
 	display: flex;
-	width: 1141px;
+	width: 100%;
 	justify-content: center;
 	background-color: transparent;
 	border-style: solid;
-	border-color: black;
+	border-color: white;
+	border-radius: 5px;
 }
 
 .gallery {	/*these next few will relate directly to the gallery pages and how they work*/
@@ -421,17 +409,11 @@ div.bottomtabs img {
     @media screen and (max-width:900px){
 .content {
 	padding: 10px 0;
-	width: 60%;
+	width: 100%;
 	float:inherit;
 }
 	}
-	    @media screen and (max-width:480px){
-.content {
-	padding: 10px 0;
-	width: 60%;
-	float:inherit;
-}
-	}
+
 
 aside {
 	float:inherit;
