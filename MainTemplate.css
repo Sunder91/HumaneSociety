@@ -15,9 +15,9 @@ body {
     @media screen and (max-width:900px){
 	body{
 	width: 100%;
-	background-size:cover;
+	background-size:contain;
+	background-repeat: repeat-y;
 	position:center bottom;
-	width: 100%;
 	object-fit: cover;
 	background-position:center;
 	background-color:white;
@@ -42,7 +42,7 @@ body {
 }
 */
 header {
-	background-color: darkgray;
+	background-color: rgb(169, 169, 169, 0.6);
 	color:black;
 	height: auto;
 	padding:10px, 5px, 10px, 0px;
@@ -55,7 +55,7 @@ header {
 	
     @media screen and (max-width:900px){
 	header{
-	background-color:darkgray;
+	background-color:rgb(169, 169, 169, 0.6);
 	color:black;
 	height: auto;
 	overflow: auto;
