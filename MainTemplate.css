@@ -15,6 +15,7 @@ body {
     @media screen and (max-width:900px){
 	body{
 	/*background-image:url(Images/bgpic.jpg);*/
+	width: 100%;
 	background-size:cover;
 	width: 100%;
 	object-fit: cover;
@@ -278,8 +279,10 @@ nav a:hover, nav a:active, nav a:focus {
 
 /*header info used to be here*/
 
+<<<<<<< HEAD
 .mainbody {
 	display: flex;
+=======
 	width: 100%;
 	justify-content: center;
 	background-color: transparent;
