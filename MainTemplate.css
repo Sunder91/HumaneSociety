@@ -16,8 +16,8 @@ body {
 	body{
 	background-image:url(Images/bgpic.jpg);
 	width: 100%;
-	background-size:cover;
-	/*background-repeat: repeat-y;*/
+	background-size: cover;
+	background-repeat: repeat-y;
 	position:center bottom;
 	object-fit: cover;
 	background-position:center;
