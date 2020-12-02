@@ -32,3 +32,25 @@ if(isset($_REQUEST["insert"])){ //this is currently working in its current form 
 
 mysqli_close($conn);
 ?>
+ <script>
+        $(document).ready(function(){
+          $('#insert').click(function(){
+            var DogPic = $('#image').val();
+            if(DogPic = '')
+            {
+                alert("Please Select Image");
+                return false;
+            }
+            else
+            {
+              var extension = $('#image').val().split('.').pop().toLowercase();
+              if(jQuery.inArray(extension, ['gif', 'png', 'jpg', 'jpeg']) == -1)
+              {
+                alert('Invalid Image File');
+                $('#image').val('');
+                return false;
+              }
+            }
+          });
+        });
+        </script>
