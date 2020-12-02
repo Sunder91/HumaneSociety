@@ -279,10 +279,8 @@ nav a:hover, nav a:active, nav a:focus {
 
 /*header info used to be here*/
 
-<<<<<<< HEAD
 .mainbody {
 	display: flex;
-=======
 	width: 100%;
 	justify-content: center;
 	background-color: transparent;

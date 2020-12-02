@@ -276,17 +276,13 @@ nav a:hover, nav a:active, nav a:focus {
 
 
 .mainbody {
-<<<<<<< HEAD
 	display: flex;
-=======
 	width: 100%;
 	justify-content: center;
 	background-color: transparent;
 	border-style: solid;
 	border-color: white;
-<<<<<<< HEAD
 	border-radius: 5px;
-=======
 }
 
 .gallery {	/*these next few will relate directly to the gallery pages and how they work*/
