@@ -32,7 +32,7 @@
 </header>
 
 <body>
-<script src="galleryfunction.js" type="text/javascript"> 
+<script src="JS/galleryfunction.js" type="text/javascript"> 
 </script>
 <div class="gallery">
 <?php
