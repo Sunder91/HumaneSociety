@@ -1,4 +1,3 @@
-        function DarkLightMode(){
             function DarkLightMode(){
                 const theme = document.querySelector("#theme"); //this slects the stylesheet
                 if (theme.getAttribute("href") == "MainTemplate.css"){
@@ -8,7 +7,8 @@
                     //localStorage.removeItem('href', 'MainTemplateDark.css');
                     //localStorage.setItem('href', 'MainTemplate.css');
             
-                    theme.href = "MainTemplate.css"        }
+                    theme.href = "MainTemplate.css"        
+                }
         }
 /* this works
       function DarkLightMode(){
