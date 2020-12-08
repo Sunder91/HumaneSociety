@@ -6,18 +6,18 @@
                     localStorage.setItem('stylesheet', "MainTemplateDark.css");
                     theme.href = "MainTemplateDark.css";
                 }else{
-                    //theme.href = "MainTemplate.css" 
+                    localStorage.getItem('stylesheet') == "MainTemplate.css";
+                    ///theme.href = "MainTemplate.css" 
                     localStorage.removeItem('stylesheet', "MainTemplateDark.css");
                     localStorage.setItem('stylesheet', "MainTemplate.css");
             
-                    theme.href = "MainTemplate.css"        
                 }
                 window.onload=function() {
                     document.getElementById('MainTemplate.css').setAttribute("href", localStorage.getItem("stylesheet")?localStorage.getItem("stylesheet"):"MainTemplate.css");       
                 }
                
         }
-        
+    //Last changes made were added line 9.  Not pulling any errors but not switching stylesheets for some reason.
         
 /* this works
       function DarkLightMode(){
