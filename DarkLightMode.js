@@ -1,16 +1,24 @@
-            function DarkLightMode(){
-                //var theme = document.getElementById('href'); this line is not working
-                const theme = document.querySelector("#theme"); //this slects the stylesheet
-                if (theme.getAttribute("href") == "MainTemplate.css"){
-                    localStorage.setItem('theme', 'Dark');
+            function DarkLightMode(stylesheet){
+                const theme = document.querySelector("#theme").setAttribute('href', 'MainTemplate.css'); //query selector #theme looks for the ID theme to help find stylesheet
+                localStorage.setItem('stylesheet', stylesheet);
+                if (localStorage.getItem('stylesheet') == "MainTemplate.css"){
+                    //localStorage.getItem('stylesheet') == "MainTemplate.css");
+                    localStorage.setItem('stylesheet', "MainTemplateDark.css");
                     theme.href = "MainTemplateDark.css";
                 }else{
-                    localStorage.removeItem('theme', 'Dark');
-                    localStorage.setItem('theme', 'Light');
+                    //theme.href = "MainTemplate.css" 
+                    localStorage.removeItem('stylesheet', "MainTemplateDark.css");
+                    localStorage.setItem('stylesheet', "MainTemplate.css");
             
                     theme.href = "MainTemplate.css"        
                 }
+                window.onload=function() {
+                    document.getElementById('MainTemplate.css').setAttribute("href", localStorage.getItem("stylesheet")?localStorage.getItem("stylesheet"):"MainTemplate.css");       
+                }
+               
         }
+        
+        
 /* this works
       function DarkLightMode(){
     const theme = document.querySelector("#theme"); //this slects the stylesheet
