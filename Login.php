@@ -10,7 +10,6 @@
       <li><a href="Dogs.php">Dogs</a></li>
       <li><a href="Cats.html">Cats</a></li>      
       <li><a href="WaysToHelp.html">Ways To Help</a></li>
-      <li><a href="ContactUs.html">Contact Us</a></li>
       <li><a href="Login.php">Login</a></li>
     </ul>
 </nav>
@@ -82,4 +81,9 @@
         
 </span>    
 </body>
+<footer>
+    <div class="mainbody">
+      <h6>phone:  (xxx)xxx-xxxx</h6><h6>email:  test@hotmail.com</h6></br><h6>find us on facebook and twitter</h6>
+    </div>
+    </footer>
 </html>
