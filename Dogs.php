@@ -24,7 +24,7 @@
       <li><a href="Dogs.php">Dogs</a></li>
       <li><a href="Cats.html">Cats</a></li>      
       <li><a href="WaysToHelp.html">Ways To Help</a></li>
-      <li><a href="ContactUs.html">Contact Us</a></li>
+      <li><a href="Login.html">Login</a></li>
     </ul>
 </nav>
 <h3>Humane Society of Polk County Logo Here</h3>
@@ -62,6 +62,9 @@ mysqli_close($conn);
 </div>
  <!--Need to add a way to get a small description added by using a dropdown. Using javascript function to open new window with all info and additional pics (want all this to load using php).  Want to add feature to have a slideshow of images playing.  Possibly just while animal has cursor hovered on it. Also need to add way to fix background image to fit the whole screen or maybe just remove it for gallery pages.-->
   <footer>
+        <div class="mainbody">
+          <h6>phone:  (xxx)xxx-xxxx</h6><h6>email:  test@hotmail.com</h6></br><h6>find us on facebook and twitter</h6>
+        </div>
   </footer>
   </div><!-- end .container -->
 </body>

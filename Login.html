@@ -2,7 +2,7 @@
 <doctype html>
 <header>
 <meta charset ="utf-8">
-<link href = "FormTemplate.css" rel="stylesheet" type="text/css">
+<link id = "theme" href = "MainTemplate.css" rel="stylesheet" type="text/css">
 <title>Humane Society of Polk County Login Page</title>
 <nav role="main">
     <ul>
@@ -10,21 +10,21 @@
       <li><a href="Dogs.php">Dogs</a></li>
       <li><a href="Cats.html">Cats</a></li>      
       <li><a href="WaysToHelp.html">Ways To Help</a></li>
-      <li><a href="ContactUs.html">Contact Us</a></li>
-      <li><a href="Login.php">Login</a></li>
+      <li><a href="Login.html">Login</a></li>
     </ul>
 </nav>
+<script src="DarkLightMode.js" type=text/javascript></script>
+<label class="switch" for="checkbox">
+  <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
+  <div class="slider round"></div>
+</label>
 <div class="headtitle">
 <h3>Humane Society of Polk County Logo Here</h3>
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </div>
 </header>
 <body>
-<div class="sidebar1">
-</div>
-<div class="sidebar2">
-</div> 
-
+<div class="midbody">
 <span class="lfbg">
 
 <!--Continue to clean up the page.  Need it to look nicer.
@@ -81,5 +81,11 @@
         </form> 
         
 </span>    
+</div>
 </body>
+<footer>
+    <div class="mainbody">
+      <h6>phone:  (xxx)xxx-xxxx</h6><h6>email:  test@hotmail.com</h6></br><h6>find us on facebook and twitter</h6>
+    </div>
+    </footer>
 </html>
