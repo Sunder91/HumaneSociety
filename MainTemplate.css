@@ -232,46 +232,103 @@ a:hover, a:active, a:focus {
 }
 
 
-nav{
+nav[role="main"]{
+	float: right;
 	font-family:Arial; 
 	font-weight:bold;
-	color: black;
+	color: white;
 	max-width:45%;
-	padding:10px, 5px, 20px, 0px;
+	padding:10px, 5px, 20px, 5px;
 	font-size: 20px;
-	float: right;
 	}
-nav ul{
+nav[role="sub"]{
+	float:left;
+	font-family:"Arial";
+	font-weight: bold;
+	color:white;
+	padding: 10px;
+	padding-right: 100px;
+	font-size:inherit;
+	width: inherit;
+	margin: 0px 0px;
+}
+nav[role="main"] ul{
 	list-style:none; 
 	margin-bottom: 15px; 
 	font-family:Arial;
 }
-nav li {
+nav[role="sub"] ul{
+	list-style: none;
+	margin-bottom: 10px;
+	font-family: inherit;
+}
+nav[role="main"] li {
 	border-bottom:inherit;
 	display:inline;
-	color:black;
-
+	color:white;
 }
-    @media screen and (max-width:900px){
-	nav li{
+@media screen and (max-width:900px){
+	nav[role="main"] li{
 	display:inline;
 	font-family:Arial;
 	font-size:12px;
-	color:black;
+	color:white;
 	}
 }
- 
-nav a, nav a:visited { 
-	padding: 5px 5px 5px 0px;
+    @media screen and (max-width:480px){
+	nav[role="main"] li{ 
+	display:inline;
+	font-family:Arial;
+	font-size:12px;
+	color:white;
+	}
+}
+nav[role="sub"] li {
+	display: block;
+	color:white;
+}
+    @media screen and (max-width:900px){
+	nav[role="sub"] li{
+	display:block;
+	font-family:Arial;
+	font-size:16px;
+	font-weight: bold;
+	color:white;
+	}
+}
+    @media screen and (max-width:480px){
+	nav[role="sub"] li{ 
+	display:block;
+	font-family:Arial;
+	font-size:16px;
+	font-weight: bold;
+	color:white;
+	}
+}
+
+nav[role="main"] a, nav[role="main"] a:visited { 
+	padding: 5px 5px 5px 5px;
 	display:inherit;
 	text-decoration: none;
 	background-color:transparent;
-	color:black;
+	color:white;
 }
-nav a:hover, nav a:active, nav a:focus { 
+nav[role="sub"] a, nav[role="sub"] a:visited { 
+	padding: 5px 5px 5px 5px;
+	display:inherit;
+	text-decoration: none;
+	background-color:transparent;
+	color:white;
+}
+nav[role="main"] a:hover, nav[role="main"] a:active, nav[role="main"] a:focus { 
 	background-color:transparent;
 	color:#219CFF; /*this is the blue color that appears when the cursor hovers over it*/
 }
+nav[role="sub"] a:hover, nav[role="sub"] a:active, nav[role="sub"] a:focus { 
+	background-color:transparent;
+	color:#219CFF; /*this is the blue color that appears when the cursor hovers over it*/
+}
+
 
 
 /* ~~ This fixed width container surrounds all other blocks ~~ */
@@ -494,40 +551,6 @@ span.lfdesc{
 	border-color: rgb(34, 34, 34);
 }
   
-/*.bottomtabs {					Need to fix to get this to show up similar to gallery
-	display: inherit;
-	flex-direction: row;
-	background-color: white;
-	padding: 20px;
-	align-content: space-between;
-	align-content: stretch;
-	border-style: solid;
-	border-color: black;
-}
-div.bottomtabs img {
-	justify-content: center;
-
-}
-.bottomtabs > div {
-	background-color: white;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 250px;
-	margin: 10px;
-	text-align: center;
-} 
-.bottomtabsdesc {
-	font-family: Arial;
-	font-weight: bold;
-	font-size: 18px;
-	color: red;
-	background-color: white;
-	text-align: center;
-	padding: 5px;
-
-} */
-
 /*sidebar info used to be here*/
 
 

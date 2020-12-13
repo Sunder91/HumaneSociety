@@ -18,7 +18,7 @@
 <meta charset="utf-8">
 <title>Humane Society of Crookston, MN</title>
 <link href="GalleryTemplate.css" rel="stylesheet" type="text/css">
-<nav>
+<nav role="main">
     <ul>
       <li><a href="Index.html">Home</a></li>
       <li><a href="Dogs.php">Dogs</a></li>
