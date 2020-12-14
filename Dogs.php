@@ -2,7 +2,6 @@
 <html>
 <header>
   <?php
-  include('session.php');
   include('connect.php');
   //session_start();
   ?>  
