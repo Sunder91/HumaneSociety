@@ -498,7 +498,7 @@ div.bottomtabs img {
 .lfbg{
 	display: flex;
 	flex-direction: row;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255, 0.6);
 	color: black;
 	min-width: 271px;
 	max-width: 350px;
@@ -516,7 +516,7 @@ span.lfdesc{
 	display: inherit;
 	min-width: 271px;/*25%*/
 	margin: -40px -15px 20px -15px;
-	background-color: rgb(138, 138, 138);
+	background-color: rgb(169, 169, 169, 0.6);
 	padding:5px;
 	border-radius: 25px 25px 0px 0px;
 }

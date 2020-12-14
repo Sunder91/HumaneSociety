@@ -580,12 +580,14 @@ header, section, footer, aside, article, figure {
 .lfbg{
 	display: flex;
 	flex-direction: row;
-	float: left;
-	background-color: rgb(34, 34, 34);
+	background-color: rgb(34, 34, 34, 0.6);
 	color: white;
 	min-width: 271px;
 	max-width: 350px;
-	margin: 15px 0px 0px 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border-radius: 25px;
 }
 span.lfdesc{
@@ -596,13 +598,13 @@ span.lfdesc{
 	display: inherit;
 	min-width: 271px;/*25%*/
 	margin: -40px -15px 20px -15px;
-	background-color: rgb(138, 138, 138);
+	background-color: rgb(138, 138, 138, 0.6);
 	padding:5px;
 	border-radius: 25px 25px 0px 0px;
 }
 .loginform{
 	min-width: 271px;
-	display:inherit;
+	display:transparent;
 	float: left;
 	margin: 10px 5px 0px 5px;
 	background-color:inherit;
