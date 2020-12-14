@@ -498,12 +498,14 @@ div.bottomtabs img {
 .lfbg{
 	display: flex;
 	flex-direction: row;
-	float: left;
 	background-color: rgb(255, 255, 255);
 	color: black;
 	min-width: 271px;
 	max-width: 350px;
-	margin: 15px 0px 0px 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	border-radius: 25px;
 }
 span.lfdesc{
