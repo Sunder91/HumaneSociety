@@ -1,20 +1,11 @@
 <!doctype html>
 <html>
 <header>
-    <?php
-    //use this to create connection to database
-    $servername = "localhost";
-    $username = "Adam";
-    $password = "Sund3r09!";
-    $dbname = "hsdb";
-
-    //Create Connection
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-    //Checks Connection
-    if (!$conn){
-        die("Connection Failed: ".mysqli_connect_error());
-    }
-    ?>
+  <?php
+  include('session.php');
+  include('connect.php');
+  //session_start();
+  ?>  
 <meta charset="utf-8">
 <title>Humane Society of Crookston, MN</title>
 <link href="GalleryTemplate.css" rel="stylesheet" type="text/css">
