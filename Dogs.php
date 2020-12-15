@@ -7,7 +7,7 @@
   ?>  
 <meta charset="utf-8">
 <title>Humane Society of Crookston, MN</title>
-<link href="MainTemplate.css" rel="stylesheet" type="text/css">
+<link id="theme" href="MainTemplate.css" rel="stylesheet" type="text/css">
 <nav role="main">
     <ul>
       <li><a href="Index.html">Home</a></li>

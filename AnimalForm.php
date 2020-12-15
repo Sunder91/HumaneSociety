@@ -9,7 +9,7 @@ include('connect.php');
 <header>
 <meta charset="utf-8">
 <title>Humane Society of Crookston, MN</title>
-<link href="FormTemplate.css" rel="stylesheet" type="text/css">
+<link id="theme" href="MainTemplate.css" rel="stylesheet" type="text/css">
 <nav role="main">
     <ul>
       <li><a href="Index.html">Home</a></li>
@@ -20,6 +20,11 @@ include('connect.php');
       <li><a href="AnimalForm.php">Animal Form</a></li>
     </ul>
 </nav>
+<script src="DarkLightMode.js" type=text/javascript></script>
+<label class="switch" for="checkbox">
+  <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
+  <div class="slider round"></div>
+</label>
 <h3>Humane Society of Polk County Logo Here</h3>
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
@@ -28,6 +33,7 @@ include('connect.php');
 </div>
 <div class="sidebar2">
 </div>
+<div class="midbody">
 <span class="afbg" id="afbg">
   <span class="afdesc" id="afdesc"><br>
 <h4>Hello,&nbsp;<span class="user" id="user"><?php echo $login_session; ?></span>&nbsp;What would you like to do?</h4>
@@ -49,12 +55,16 @@ include('connect.php');
         <input class="theme" type="button" value="" onclick="ThemeChange()">
         <input class="button4" type="submit" value="Sign Out">
         
-        </form></span>
+        </form></span></div>
          
 
 </span>
   <footer>
+    <div class="mainbody">
+      <h6>phone:  (xxx)xxx-xxxx</h6><h6>email:  test@hotmail.com</h6></br><h6>find us on facebook and twitter</h6>
+    </div>
   </footer>
+  
   <!-- end .container -->
 </body>
 </html>
