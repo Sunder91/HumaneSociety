@@ -27,19 +27,7 @@ body {
 	color:white;
 	}
 }
-/*
-    @media screen and (max-width:480px){
-	body{
-	/*background-image:url(Images/bgpic.jpgk);
-	background-size:cover;
-	background-position:center;
-	object-fit: cover;
-	margin: 0;
-	padding: 0;
-	background-color:black;
-	color:white;
-	}
-}*/
+
 header {
 	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
@@ -62,18 +50,6 @@ header {
 	padding: 0;
 	}
 }
-/*
-    @media screen and (max-width:480px){
-	header{
-	background-color: slategray;
-	color:white;
-	background-repeat:repeat;
-	margin: 0;
-	padding: 0;
-	height: auto;
-	overflow: auto;
-	}
-}*/
 
 .sidebar1 {
 	background-color:rgb(0, 0, 0, 0.6);
@@ -100,18 +76,6 @@ header {
 
 	}
 }
-/*
-	@media screen and (max-width:480px) {
-.sidebar1 {
-	background-color:slategray;
-	color: black;
-	float: left;
-	width: 100%;
-	height:420px;
-	padding-bottom:0;
-	border-style: solid;
-	border-color: black;	}
-}*/
 
 .midbody {
 	background-color:rgb(0, 0, 0, 0.6);
@@ -143,18 +107,6 @@ header {
 
 	}
 }
-/*
-	@media screen and (max-width:480px) {
-.midbody {
-	background-color:slategray;
-	color: black;
-	float: left;
-	width: 100%;
-	height:420px;
-	padding-bottom:0;
-	border-style: solid;
-	border-color: black;	}
-} */
 
 .sidebar2 {
 	background-color:rgb(0, 0, 0, 0.6);
@@ -180,19 +132,6 @@ header {
 	border-color: black;
 	}
 }
-/*
-	@media screen and (max-width:480px) {
-.sidebar2 {
-	background-color:slategray;
-	color: black;
-	float: left;
-	width: 100%;
-	height:420px;
-	padding-bottom:0;
-	border-style: solid;
-	border-color: black;	}
-} */
-
 
 ul, ol, dl { 
 	padding: 0;
@@ -326,14 +265,11 @@ nav[role="sub"] a:hover, nav[role="sub"] a:active, nav[role="sub"] a:focus {
 	color:#219CFF; /*this is the blue color that appears when the cursor hovers over it*/
 }
 
-
-
 /* ~~ This fixed width container surrounds all other blocks ~~ */
 .container {
 	background-color:transparent;
 	margin: 0 auto; 
 }
-
 
 .mainbody {
 	display: flex;
@@ -427,40 +363,6 @@ div.bottomtabs img {
 	border-style: solid;
 	border-color: black;
 }
-/*.bottomtabs {					Need to fix to get this to show up similar to gallery
-	display: inherit;
-	flex-direction: row;
-	background-color: white;
-	padding: 20px;
-	align-content: space-between;
-	align-content: stretch;
-	border-style: solid;
-	border-color: black;
-}
-div.bottomtabs img {
-	justify-content: center;
-
-}
-.bottomtabs > div {
-	background-color: white;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 250px;
-	margin: 10px;
-	text-align: center;
-} 
-.bottomtabsdesc {
-	font-family: Arial;
-	font-weight: bold;
-	font-size: 18px;
-	color: red;
-	background-color: white;
-	text-align: center;
-	padding: 5px;
-
-} */
-
 
 .content {
 	padding: 10px 0;
@@ -630,4 +532,112 @@ span.lfdesc{
 	border-radius: 8px;
 	background-color: rgb(197, 197, 197); 
 	border-color: rgb(34, 34, 34);
+}
+.afbglight{
+	display: block;
+	float: left;
+	border: 1px solid rgb(34, 34, 34);
+	background-color: white;
+	color: rgb(34, 34, 34);
+	min-width: 25px;
+	margin: 15px 0px 0px 45px;
+	border-radius: 25px;
+}
+
+span.afdesc{
+	font-family: Arial;
+	font-size:18;
+	color: black;
+	text-align: center;
+	display: inherit;
+	min-width: 25%;
+	margin: 0px 0px;
+	background-color: rgb(138, 138, 138);
+	padding:5px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+span.afdesclight{
+	font-family: Arial;
+	font-size:18;
+	color: rgb(138, 138, 138);
+	text-align: center;
+	display: inherit;
+	min-width: 25%;
+	margin: 0px 0px;
+	background-color: black;
+	padding:5px;
+	border-radius: 25px 25px 0px 0px;
+}
+span.navlf{
+	display:inherit;
+	min-width: 25px;
+	background-color: inherit;
+	min-height: 125px;
+	color: black;
+}
+span.affooter{
+	font-family: Arial;
+	font-size:18;
+	color: black;
+	text-align: center;
+	display: inherit;
+	margin: 0px 0px 0px 0px;
+	background-color: rgb(138, 138, 138);
+	padding:5px;
+	border-radius: 0px 0px 25px 25px;
+	min-width: 25%;
+}
+
+span.animalform{
+	min-width: 25%;
+	display:inherit;
+	float: left;
+	margin: 0px 5px 5px 5px;
+	background-color:inherit;
+	font-family: Arial;
+	font-size:16;
+	color: white;
+	padding: 20px 5px;
+	border-radius: 0px 0px 25px 25px;
+} 
+.button3{
+	font-size: 14px;
+	display: inline;
+	font-family:Arial;
+	margin: 15px 15px 0px 15px;
+	padding: 9px;
+	border-radius: 8px;
+	background-color: rgb(197, 197, 197); 
+	border-color: rgb(34, 34, 34);
+}
+.button4{
+	font-size: 14px;
+	display: inline;
+	font-family:Arial;
+	margin: 0px 0px 10px 0px;
+	padding: 9px;
+	border-radius: 8px;
+	background-color: rgb(197, 197, 197); 
+	border-color: rgb(34, 34, 34);
+}
+.user{
+	font-size: inherit;
+	font-family: inherit;
+	font-style: italic;
+	font-weight: bolder;
+	color: #0265b6; 
+	text-shadow: 2px 2px 5px white;
+	padding: 0px 3px;
+	
+}
+.theme{
+	display: inline;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+	background-image: linear-gradient(to right, white, black);
+	
 }
