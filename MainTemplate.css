@@ -491,7 +491,7 @@ div.bottomtabs img {
 }
 .errormsg {
 	display: inherit;
-	color: white;
+	color: black;
 	font-style: italic;
 
 }
