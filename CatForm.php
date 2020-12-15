@@ -41,8 +41,6 @@ if (!$conn){
 </header>
 <body>
 <div class="sidebar1">
-  <p>This is a test to see how this looks and how the sidebars will effect the placement of the animal spotlight.</p>
-</div>
 <span class="afbg">
       <span class=afdesc><h3>Welcome <?php echo $login_session; ?></h3></span>
     <form class="animalform" action="AnimalFormAction.php" method="post" enctype="multipart/form-data">
@@ -97,6 +95,7 @@ if (!$conn){
           });
         });
         </script>
+        </div>
 <div class="midbody"> 
   This is where the input data will go for now.<br>
   <?php
@@ -123,7 +122,7 @@ mysqli_close($conn);
 <div class="sidebar2">
 <!--Need to clean the delete form up to make it look more professional.  Maybe match the animal form?-->
 <form action="CatDelete.php" class="afdesc" method="post">
-<label>Select Dog</label><br>
+<label>Select Cat</label><br>
     <select name="CatName">
     <option value="Initial" selected>Please Select</option>
 
