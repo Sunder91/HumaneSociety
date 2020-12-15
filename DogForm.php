@@ -135,6 +135,9 @@ mysqli_close($conn);
       
         </br>
   <footer>
+    <div class="mainbody">
+      <h6>phone:  (xxx)xxx-xxxx</h6><h6>email:  test@hotmail.com</h6></br><h6>find us on facebook and twitter</h6>
+    </div>
   </footer>
   <!-- end .container -->
 </body>
