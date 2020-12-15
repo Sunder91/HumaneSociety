@@ -20,7 +20,7 @@ if (!$conn){
 ?>
 <meta charset="utf-8">
 <title>Humane Society of Crookston, MN</title>
-<link href="FormTemplate.css" rel="stylesheet" type="text/css">
+<link id="theme" href="MainTemplate.css" rel="stylesheet" type="text/css">
 <nav role="main">
     <ul>
       <li><a href="Index.html">Home</a></li>
@@ -31,34 +31,16 @@ if (!$conn){
       <li><a href="AnimalForm.php">Animal Form</a></li>
     </ul>
 </nav>
+<script src="DarkLightMode.js" type=text/javascript></script>
+<label class="switch" for="checkbox">
+  <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
+  <div class="slider round"></div>
+</label>
 <h3>Humane Society of Polk County Logo Here</h3>
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
 <body>
-<div class="sidebar1"> 
-  This is where the input data will go for now.<br>
-  <?php
-  //create connection
-  $conn = mysqli_connect($servername, $username, $password, $dbname);
-  //check connection
-  if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-  }
-  $sql = "SELECT CatName, CatBio FROM cats ORDER BY ID Desc" ;
-  $result = mysqli_query($conn, $sql);
-  if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-        echo $row["CatName"]. " " . $row["CatBio"]. "<br>";
-    }
-} else {
-    echo "0 results";
-}
-mysqli_close($conn);
-?>
-
-</div>
-<div class="sidebar2">
+<div class="sidebar1">
   <p>This is a test to see how this looks and how the sidebars will effect the placement of the animal spotlight.</p>
 </div>
 <span class="afbg">
@@ -115,6 +97,49 @@ mysqli_close($conn);
           });
         });
         </script>
+<div class="midbody"> 
+  This is where the input data will go for now.<br>
+  <?php
+  //create connection
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
+  //check connection
+  if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+  }
+  $sql = "SELECT CatName, CatBio FROM cats ORDER BY ID Desc" ;
+  $result = mysqli_query($conn, $sql);
+  if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo $row["CatName"]. " " . $row["CatBio"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+mysqli_close($conn);
+?>
+
+</div>
+<div class="sidebar2">
+<!--Need to clean the delete form up to make it look more professional.  Maybe match the animal form?-->
+<form action="CatDelete.php" class="afdesc" method="post">
+<label>Select Dog</label><br>
+    <select name="CatName">
+    <option value="Initial" selected>Please Select</option>
+
+      <?php
+      include('Connect.php');
+      $sql = mysqli_query($conn, "SELECT CatName FROM Cats ORDER BY ID ASC");
+      while ($row = mysqli_fetch_assoc($sql)){?>
+        <option value="<?php echo $row['CatName']; ?>"><?php echo $row['CatName']; ?></option>
+      <?php }?>
+    </select>
+    <br>
+<input class="button4" type="submit" name="delete" value="Delete">
+</form>
+
+</div>
+
       
 
       
