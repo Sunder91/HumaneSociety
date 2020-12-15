@@ -11,7 +11,7 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
 <header>
 <meta charset="utf-8">
 <title>Humane Society of Crookston, MN</title>
-<link href="FormTemplate.css" rel="stylesheet" type="text/css">
+<link id="theme" href="MainTemplate.css" rel="stylesheet" type="text/css">
 <nav role="main">
     <ul>
       <li><a href="Index.html">Home</a></li>
@@ -22,48 +22,16 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
       <li><a href="AnimalForm.php">Animal Form</a></li>
     </ul>
 </nav>
+<script src="DarkLightMode.js" type=text/javascript></script>
+<label class="switch" for="checkbox">
+  <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
+  <div class="slider round"></div>
+</label>
 <h3>Humane Society of Polk County Logo Here</h3>
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
 <body>
-<div class="sidebar1"> 
-  This is where the input data will go for now.<br>
-  <?php
-  include('connect.php');
-  $sql = "SELECT DogName, DogBio FROM dogs ORDER BY ID Desc" ;
-  $result = mysqli_query($conn, $sql);
-  if (mysqli_num_rows($result) > 0) {
-    // output data of each row
-    while($row = mysqli_fetch_assoc($result)) {
-        echo $row["DogName"]. " " . $row["DogBio"]. "<br>";
-    }
-} else {
-    echo "0 results";
-}
-mysqli_close($conn);
-?>
-
-</div>
-
-<div class="sidebar2">
-<!--Need to clean the delete form up to make it look more professional.  Maybe match the animal form?-->
-<form action="DogDelete.php" class="afdesc" method="post">
-<label>Select Dog</label><br>
-    <select name="DogName">
-    <option value="Initial" selected>Please Select</option>
-
-      <?php
-      include('Connect.php');
-      $sql = mysqli_query($conn, "SELECT DogName FROM Dogs ORDER BY ID ASC");
-      while ($row = mysqli_fetch_assoc($sql)){?>
-        <option value="<?php echo $row['DogName']; ?>"><?php echo $row['DogName']; ?></option>
-      <?php }?>
-    </select>
-    <br>
-<input class="button4" type="submit" name="delete" value="Delete">
-</form>
-
-</div>
+<div class="sidebar1">
 <span class="afbg">
       <span class=afdesc><h3>Welcome <?php echo $login_session; ?></h3></span>
     <form class="animalform" action="DogFormAction.php" method="post" enctype="multipart/form-data">
@@ -122,6 +90,46 @@ mysqli_close($conn);
           });
         });
         </script>
+</div>
+<div class="midbody"> 
+  This is where the input data will go for now.<br>
+  <?php
+  include('connect.php');
+  $sql = "SELECT DogName, DogBio FROM dogs ORDER BY ID Desc" ;
+  $result = mysqli_query($conn, $sql);
+  if (mysqli_num_rows($result) > 0) {
+    // output data of each row
+    while($row = mysqli_fetch_assoc($result)) {
+        echo $row["DogName"]. " " . $row["DogBio"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+mysqli_close($conn);
+?>
+
+</div>
+
+<div class="sidebar2">
+<!--Need to clean the delete form up to make it look more professional.  Maybe match the animal form?-->
+<form action="DogDelete.php" class="afdesc" method="post">
+<label>Select Dog</label><br>
+    <select name="DogName">
+    <option value="Initial" selected>Please Select</option>
+
+      <?php
+      include('Connect.php');
+      $sql = mysqli_query($conn, "SELECT DogName FROM Dogs ORDER BY ID ASC");
+      while ($row = mysqli_fetch_assoc($sql)){?>
+        <option value="<?php echo $row['DogName']; ?>"><?php echo $row['DogName']; ?></option>
+      <?php }?>
+    </select>
+    <br>
+<input class="button4" type="submit" name="delete" value="Delete">
+</form>
+
+</div>
+
       
 
       
