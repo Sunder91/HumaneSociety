@@ -18,17 +18,12 @@
   <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
   <div class="slider round"></div>
 </label>
-<div class="headtitle">
 <h3>Humane Society of Polk County Logo Here</h3>
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
-</div>
 </header>
 <body>
 <div class="midbody">
 <span class="lfbg">
-
-<!--Continue to clean up the page.  Need it to look nicer.
--->
         <form method="post" action="LoginAction.php" class="loginform" id="Login" style="display:block">
         <span class="lfdesc">Please login below</br>
         <span class="errormsg"><?php if(isset($_GET['errormsg'])){
