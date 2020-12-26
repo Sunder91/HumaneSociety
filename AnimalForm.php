@@ -16,8 +16,6 @@ include('connect.php');
       <li><a href="Dogs.php">Dogs</a></li>
       <li><a href="Cats.html">Cats</a></li>      
       <li><a href="WaysToHelp.html">Ways To Help</a></li>
-      <li><a href="ContactUs.html">Contact Us</a></li>
-      <li><a href="AnimalForm.php">Animal Form</a></li>
     </ul>
 </nav>
 <script src="DarkLightMode.js" type=text/javascript></script>
