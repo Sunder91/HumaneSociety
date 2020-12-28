@@ -492,7 +492,7 @@ header, section, footer, aside, article, figure {
 	margin-right: auto;
 	margin-top: 5px;
 	margin-bottom: 10px;
-	border-radius: 25px;
+	border-radius: 15px;
 }
 	@media screen and (max-width:900px){
 .lfbg{
@@ -526,7 +526,7 @@ header, section, footer, aside, article, figure {
 	font-size:16;
 	color: white;
 	padding: 10px 10px;
-	border-radius: 25px;
+	border-radius: 15px;
 }
 .button1{
 	font-size: 14px;
@@ -548,29 +548,6 @@ header, section, footer, aside, article, figure {
 	background-color: rgb(197, 197, 197); 
 	border-color: rgb(34, 34, 34);
 }
-.afbg{
-	display: block;
-	background-color: rgba(34, 34, 34, 0.8);
-	color:  white;
-	float: left;
-	font: Arial;
-	font-size: 16px;
-	min-width: 25px;
-	margin: 15px 0px 0px 45px;
-	border-radius: 25px;
-}
-span.afdesc{
-	display: transparent;
-	background-color: rgba(138, 138, 138, 0.8);
-	font-family: Arial;
-	font-size:18;
-	color: black;
-	text-align: center;
-	min-width: 25%;
-	margin: 0px 0px;
-	padding:5px;
-	border-radius: 25px 25px 0px 0px;
-}
 span.navlf{
 	background-color: transparent;
 	display:inherit;
@@ -578,33 +555,9 @@ span.navlf{
 	min-width: 25px;
 	min-height: 125px;
 }
-span.affooter{
-	display: inherit;
-	background-color: rgba(138, 138, 138, 0.8);
-	color: black;
-	font-family: Arial;
-	font-size:18;
-	text-align: center;
-	margin: 0px 0px 0px 0px;
-	padding:5px;
-	border-radius: 0px 0px 25px 25px;
-	min-width: 25%;
-}
-span.animalform{
-	min-width: 25%;
-	display:inherit;
-	float: left;
-	margin: 0px 5px 5px 5px;
-	background-color:transparent;
-	font-family: Arial;
-	font-size:16;
-	color: white;
-	padding: 20px 5px;
-	border-radius: 0px 0px 25px 25px;
-} 
 .button3{
 	font-size: 14px;
-	display: inline;
+	display: inline-flex;
 	font-family:Arial;
 	margin: 15px 15px 0px 15px;
 	padding: 9px;
@@ -614,7 +567,7 @@ span.animalform{
 }
 .button4{
 	font-size: 14px;
-	display: inline;
+	display: inline-flex;
 	font-family:Arial;
 	margin: 0px 0px 10px 0px;
 	padding: 9px;

@@ -555,29 +555,6 @@ span.lfdesc{
 	background-color: rgb(75, 75, 75); 
 	border-color: rgb(192, 192, 192);
 }
-.afbg{
-	display: block;
-	background-color: rgba(34, 34, 34, 0.8);
-	color:  white;
-	float: left;
-	font: Arial;
-	font-size: 16px;
-	min-width: 25px;
-	margin: 15px 0px 0px 45px;
-	border-radius: 25px;
-}
-span.afdesc{
-	display: transparent;
-	background-color: rgba(138, 138, 138, 0.8);
-	font-family: Arial;
-	font-size:18;
-	color: black;
-	text-align: center;
-	min-width: 25%;
-	margin: 0px 0px;
-	padding:5px;
-	border-radius: 25px 25px 0px 0px;
-}
 span.navlf{
 	display:inherit;
 	background-color: transparent;
@@ -585,34 +562,11 @@ span.navlf{
 	min-width: 25px;
 	min-height: 125px;
 }
-span.affooter{
-	display: inherit;
-	background-color: rgba(138, 138, 138, 0.8);
-	color: black;
-	font-family: Arial;
-	font-size:18;
-	text-align: center;
-	margin: 0px 0px 0px 0px;
-	padding:5px;
-	border-radius: 0px 0px 25px 25px;
-	min-width: 25%;
-}
-span.animalform{
-	background-color:transparent;
-	color: white;
-	min-width: 25%;
-	float: left;
-	margin: 0px 5px 5px 5px;
-	font-family: Arial;
-	font-size:16;
-	padding: 20px 5px;
-	border-radius: 0px 0px 25px 25px;
-} 
 .button3{
 	font-size: 14px;
-	display: inline;
+	display: inline-flex;
 	font-family:Arial;
-	margin: 15px 15px 0px 15px;
+	margin: 15px 15px 0px 10px;
 	padding: 9px;
 	border-radius: 8px;
 	background-color: rgb(197, 197, 197); 
@@ -620,7 +574,7 @@ span.animalform{
 }
 .button4{
 	font-size: 14px;
-	display: inline;
+	display: inline-flex;
 	font-family:Arial;
 	margin: 0px 0px 10px 0px;
 	padding: 9px;

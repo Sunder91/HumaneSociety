@@ -59,13 +59,11 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
         <input type="file" Name="DogPic" Id="DogPic" required></br>
         <!--need to get a function in place for automatic pricing-->
         <input class="button3" type="Submit" value="Submit">
+        <a href="logout.php" class="button4">Sign Out</a>
 </form> 
-        <form action="logout.php" class="">
         <!---would like to add something to confirm animal has been added around here like below
         <php echo $_POST["DogName"];?> has been added.</p>
 -->
-        <input class="button4" type="submit" value="Sign Out">
-        </form>
         </span>
         
         <script>
