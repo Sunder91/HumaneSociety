@@ -539,7 +539,7 @@ span.lfdesc{
 	font: Arial;
 	font-size: 16px;
 	/*background-image: linear-gradient(to bottom, rgb(138, 138, 138) 15%, rgb(34, 34, 34) 70%, rgb(138, 138, 138) 15%); */
-	background-color: rgb(34, 34, 34);
+	background-color: rgba(34, 34, 34, 0.8);
 	color:  white;
 	min-width: 25px;
 	margin: 15px 0px 0px 45px;
@@ -548,7 +548,7 @@ span.lfdesc{
 .afbglight{
 	display: block;
 	float: left;
-	border: 1px solid rgb(34, 34, 34);
+	border: 1px solid rgba(34, 34, 34, 0.8);
 	background-color: white;
 	color: rgb(34, 34, 34);
 	min-width: 25px;
@@ -564,7 +564,7 @@ span.afdesc{
 	display: inherit;
 	min-width: 25%;
 	margin: 0px 0px;
-	background-color: rgb(138, 138, 138);
+	background-color: rgba(138, 138, 138, 0.8);
 	padding:5px;
 	border-radius: 25px 25px 0px 0px;
 }
@@ -572,7 +572,7 @@ span.afdesc{
 span.afdesclight{
 	font-family: Arial;
 	font-size:18;
-	color: rgb(138, 138, 138);
+	color: rgba(138, 138, 138, 0.8);
 	text-align: center;
 	display: inherit;
 	min-width: 25%;
