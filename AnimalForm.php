@@ -42,11 +42,11 @@ include('connect.php');
     </ul>
 </nav></span><br>
 
-  <script src="ThemeChange.js" type="text/javascript">
-        </script>
+  <!--<script src="ThemeChange.js" type="text/javascript">
+        </script>-->
         <form action="logout.php" class="animalform">
         <span class="affooter" id="affooter">
-        <input class="theme" type="button" value="" onclick="ThemeChange()">
+        <!--<input class="theme" type="button" value="" onclick="ThemeChange()">-->
         <input class="button4" type="submit" value="Sign Out">
         
         </form></span></div>
