@@ -484,7 +484,7 @@ header, section, footer, aside, article, figure {
 .lfbg{
 	display: flex;
 	flex-direction: row;
-	background-color: rgba(169, 169, 169, 0.8);
+	background-color: rgba(169, 169, 169, 0);
 	color: black;
 	min-width: 271px;
 	max-width: 350px;

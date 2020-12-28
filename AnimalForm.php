@@ -27,7 +27,7 @@ include('connect.php');
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
 <body>
-  <div class="sidebar1">
+  <div class="midbody">
   <span class="afbg" id="afbg">
   <span class="afdesc" id="afdesc"><br>
 <h4>Hello,&nbsp;<span class="user" id="user"><?php echo $login_session; ?></span>&nbsp;What would you like to do?</h4>
@@ -53,10 +53,7 @@ include('connect.php');
          
 
 </span>
-<div class="sidebar2">
-</div>
-<div class="midbody">
-</div>
+
   <footer>
     <div class="mainbody">
       <h6>phone:  (xxx)xxx-xxxx</h6><h6>email:  test@hotmail.com</h6></br><h6>find us on facebook and twitter</h6>
