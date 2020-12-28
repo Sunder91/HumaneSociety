@@ -4,6 +4,11 @@
 <meta charset ="utf-8">
 <link id = "theme" href = "MainTemplate.css" rel="stylesheet" type="text/css">
 <title>Humane Society of Polk County Login Page</title>
+<script src="DarkLightMode.js" type=text/javascript></script>
+<label class="switch" for="checkbox">
+  <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
+  <div class="slider round"></div>
+</label>
 <nav role="main">
     <ul>
       <li><a href="Index.html">Home</a></li>
@@ -13,11 +18,7 @@
       <li><a href="Login.php">Login</a></li>
     </ul>
 </nav>
-<script src="DarkLightMode.js" type=text/javascript></script>
-<label class="switch" for="checkbox">
-  <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
-  <div class="slider round"></div>
-</label>
+
 <h3>Humane Society of Polk County Logo Here</h3>
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>

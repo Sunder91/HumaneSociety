@@ -12,6 +12,11 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
 <meta charset="utf-8">
 <title>Humane Society of Crookston, MN</title>
 <link id="theme" href="MainTemplate.css" rel="stylesheet" type="text/css">
+<script src="DarkLightMode.js" type=text/javascript></script>
+<label class="switch" for="checkbox">
+  <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
+  <div class="slider round"></div>
+</label>
 <nav role="main">
     <ul>
       <li><a href="Index.html">Home</a></li>
@@ -22,11 +27,7 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
       <li><a href="AnimalForm.php">Animal Form</a></li>
     </ul>
 </nav>
-<script src="DarkLightMode.js" type=text/javascript></script>
-<label class="switch" for="checkbox">
-  <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
-  <div class="slider round"></div>
-</label>
+
 <h3>Humane Society of Polk County Logo Here</h3>
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
