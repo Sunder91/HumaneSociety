@@ -57,12 +57,9 @@ header {
 	float: left;
 	width: 30%;
 	height:420px;
-	margin: 0px, 0px, 0px, 0px;
+	margin-top: 5px;
 	padding-bottom:0;
-	border-radius: 5px;
-	border-style: solid;
-	border-color: white;
-	border-width: medium;
+	border-radius: 15px;
 }
     @media screen and (max-width:900px){
 .sidebar1 {
@@ -72,26 +69,37 @@ header {
 	width: 100%;
 	height:420px;
 	padding-bottom:0;
-	
-
 	}
 }
-
+.afsidebar {
+	background-color:transparent;
+	color: black;
+	float: left;
+	width: 30%;
+	height:auto;
+	margin: 0px, 0px, 0px, 0px;
+	border-radius: 15px;
+}
+    @media screen and (max-width:900px){ 
+.afsidebar {
+	background-color:rgb(0, 0, 0, 0.6);
+	color: black;
+	float: left;
+	width: 100%;
+	height:auto;
+	padding-bottom:0;
+	}
+}
 .midbody {
 	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
 	float: left;
-	width: 30%;
+	width: 100%;
 	height:420px;
-	margin-left: 4%;
-	margin-right: 3%;
-	padding:0px, 0px, 0px, 0px;
-	border-radius: 5px;
-	border-left-style: solid;
-	border-style: solid;
-	border-color: white;
-	border-width: medium;	
-	
+	padding:0;
+	margin: 0%;
+	margin-top: 10px;
+	margin-bottom:10px;
 }
     @media screen and (max-width:900px){
 .midbody {
@@ -104,7 +112,6 @@ header {
 	margin: 0%;
 	margin-top: 10px;
 	margin-bottom:10px;
-
 	}
 }
 
@@ -114,11 +121,10 @@ header {
 	float: right;
 	width: 30%;
 	height: 420px;
-	margin: 0px, 0px, 0px, 0px;
-	border-radius: 5px;
-	border-style: solid;
-	border-width: medium;
-	border-color: white;
+	margin-top: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	border-radius: 15px;
 }
     @media screen and (max-width:900px){
 .sidebar2 {
@@ -128,8 +134,6 @@ header {
 	width: 100%;
 	height: 420px;
 	padding-bottom:0;
-	border-style: solid;
-	border-color: black;
 	}
 }
 
@@ -481,18 +485,31 @@ header, section, footer, aside, article, figure {
 }
 .lfbg{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	background-color: rgb(34, 34, 34, 0.8);
 	color: white;
 	min-width: 271px;
 	max-width: 350px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 10px;
 	border-radius: 25px;
 }
-span.lfdesc{
+	@media screen and (max-width:900px){
+.lfbg{
+	display: flex;
+	flex-direction: column;
+	background-color: transparent;
+	color: white;
+	float: left;
+	margin-left:5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+	}
+}
+	span.lfdesc{
 	font-family: Arial;
 	font-size:18;
 	color: white;
@@ -535,54 +552,52 @@ span.lfdesc{
 }
 .afbg{
 	display: block;
+	background-color: rgba(34, 34, 34, 0.8);
+	color:  white;
 	float: left;
 	font: Arial;
 	font-size: 16px;
-	/*background-image: linear-gradient(to bottom, rgb(138, 138, 138) 15%, rgb(34, 34, 34) 70%, rgb(138, 138, 138) 15%); */
-	background-color: rgba(34, 34, 34, 0.8);
-	color:  white;
 	min-width: 25px;
 	margin: 15px 0px 0px 45px;
 	border-radius: 25px;
 }
 span.afdesc{
+	display: transparent;
+	background-color: rgba(138, 138, 138, 0.8);
 	font-family: Arial;
 	font-size:18;
 	color: black;
 	text-align: center;
-	display: inherit;
 	min-width: 25%;
 	margin: 0px 0px;
-	background-color: rgba(138, 138, 138, 0.8);
 	padding:5px;
 	border-radius: 25px 25px 0px 0px;
 }
 span.navlf{
+	background-color: transparent;
 	display:inherit;
-	min-width: 25px;
-	background-color: inherit;
-	min-height: 125px;
 	color: black;
+	min-width: 25px;
+	min-height: 125px;
 }
 span.affooter{
+	display: inherit;
+	background-color: rgba(138, 138, 138, 0.8);
+	color: black;
 	font-family: Arial;
 	font-size:18;
-	color: black;
 	text-align: center;
-	display: inherit;
 	margin: 0px 0px 0px 0px;
-	background-color: rgb(138, 138, 138);
 	padding:5px;
 	border-radius: 0px 0px 25px 25px;
 	min-width: 25%;
 }
-
 span.animalform{
 	min-width: 25%;
 	display:inherit;
 	float: left;
 	margin: 0px 5px 5px 5px;
-	background-color:inherit;
+	background-color:transparent;
 	font-family: Arial;
 	font-size:16;
 	color: white;

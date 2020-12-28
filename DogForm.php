@@ -31,10 +31,10 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
 <body>
-<div class="sidebar1">
-<span class="afbg">
-      <span class=afdesc><h3>Welcome <?php echo $login_session; ?></h3></span>
-    <form class="animalform" action="DogFormAction.php" method="post" enctype="multipart/form-data">
+<div class="afsidebar">
+<span class="lfbg">
+    <form class="loginform" action="DogFormAction.php" method="post" enctype="multipart/form-data">
+    <span class=lfdesc><h4>Welcome <?php echo $login_session; ?></h4></span>
         Name:&nbsp;<input type="text" name="DogName" id="DogName" required></br>
         </br>&nbsp;&nbsp;&nbsp;Bio:&nbsp;&nbsp;<textarea name="DogBio" id="DogBio" rows="5" cols="40" required></textarea></br>
         Good with Dogs:<input type="radio" id="yes" name="GoodwDogs" value="yes" required>
@@ -60,7 +60,7 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
         <!--need to get a function in place for automatic pricing-->
         <input class="button3" type="Submit" value="Submit">
 </form> 
-        <form action="logout.php" class="animalform">
+        <form action="logout.php" class="">
         <!---would like to add something to confirm animal has been added around here like below
         <php echo $_POST["DogName"];?> has been added.</p>
 -->
@@ -112,7 +112,7 @@ mysqli_close($conn);
 
 <div class="sidebar2">
 <!--Need to clean the delete form up to make it look more professional.  Maybe match the animal form?-->
-<form action="DogDelete.php" class="afdesc" method="post">
+<form action="DogDelete.php" class="lfdesc" method="post">
 <label>Select Dog</label><br>
     <select name="DogName">
     <option value="Initial" selected>Please Select</option>

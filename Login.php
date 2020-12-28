@@ -22,7 +22,7 @@
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
 <body>
-<div class="midbody">
+<div>
 <span class="lfbg">
         <form method="post" action="LoginAction.php" class="loginform" id="Login" style="display:block">
         <span class="lfdesc">Please login below</br>

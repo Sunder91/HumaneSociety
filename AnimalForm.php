@@ -27,9 +27,10 @@ include('connect.php');
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
 <body>
-  <div class="midbody">
-  <span class="afbg" id="afbg">
-  <span class="afdesc" id="afdesc"><br>
+  <div>
+  <span class="lfbg" id="lfbg">
+  <form action="logout.php" class="loginform">
+  <span class="lfdesc" id="lfdesc"><br>
 <h4>Hello,&nbsp;<span class="user" id="user"><?php echo $login_session; ?></span>&nbsp;What would you like to do?</h4>
   </span>
 <span class="navlf">
@@ -43,9 +44,8 @@ include('connect.php');
 </nav></span><br>
 
   <!--<script src="ThemeChange.js" type="text/javascript">
-        </script>-->
-        <form action="logout.php" class="animalform">
-        <span class="affooter" id="affooter">
+        </script>
+        <span class="affooter" id="affooter">-->
         <!--<input class="theme" type="button" value="" onclick="ThemeChange()">-->
         <input class="button4" type="submit" value="Sign Out">
         
