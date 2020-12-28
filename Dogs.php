@@ -32,7 +32,7 @@
 </script>
 <div class="gallery">
 <?php
-$image_name = '/Images/Shadow4.jpg';
+//$image_name = '/Images/Shadow4.jpg';
   $conn = mysqli_connect($servername, $username, $password, $dbname);
   //check connection
   if (!$conn) {
