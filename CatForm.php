@@ -40,10 +40,10 @@ if (!$conn){
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
 <body>
-<div class="sidebar1">
-<span class="afbg">
-      <span class=afdesc><h3>Welcome <?php echo $login_session; ?></h3></span>
-    <form class="animalform" action="AnimalFormAction.php" method="post" enctype="multipart/form-data">
+<div class="afsidebar">
+<span class="lfbg">
+<form class="loginform" action="CatFormAction.php" method="post" enctype="multipart/form-data">
+      <span class=lfdesc><h3>Welcome <?php echo $login_session; ?></h3></span>
         Name:&nbsp;<input type="text" name="CatName" id="CatName" required></br>
         </br>&nbsp;&nbsp;&nbsp;Bio:&nbsp;&nbsp;<textarea name="CatBio" id="CatBio" rows="5" cols="40" required></textarea></br>
         Good with Dogs:<input type="radio" id="yes" name="GoodwDogs" value="yes" required>
@@ -68,10 +68,10 @@ if (!$conn){
         <input type="file" Name="CatPic" Id="CatPic" required></br>
         <!--need to get a function in place for automatic pricing-->
         <input class="button3" type="Submit" value="Submit">
+        <a href="logout.php" class="button4">Sign Out</a>
+
 </form> 
-        <form action="logout.php" class="animalform">
-        <input class="button4" type="submit" value="Sign Out">
-        </form>
+        
         </span>
         <script>
         $(document).ready(function(){

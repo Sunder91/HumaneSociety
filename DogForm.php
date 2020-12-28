@@ -23,7 +23,6 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
       <li><a href="Dogs.php">Dogs</a></li>
       <li><a href="Cats.html">Cats</a></li>      
       <li><a href="WaysToHelp.html">Ways To Help</a></li>
-      <li><a href="ContactUs.html">Contact Us</a></li>
       <li><a href="AnimalForm.php">Animal Form</a></li>
     </ul>
 </nav>
