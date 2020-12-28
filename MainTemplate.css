@@ -425,7 +425,6 @@ header, section, footer, aside, article, figure {
 
 /*The toggle switch for light and dark mode */
 .switch {
-	display: inline-block;
 	float: right;
 	height: 17px;
 	position: relative;

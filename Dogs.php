@@ -8,7 +8,6 @@
 <meta charset="utf-8">
 <title>Humane Society of Crookston, MN</title>
 <link id="theme" href="MainTemplate.css" rel="stylesheet" type="text/css">
-</nav>
 <script src="DarkLightMode.js" type=text/javascript></script>
 <label class="switch" for="checkbox">
   <input type="checkbox" id="checkbox" onclick="DarkLightMode()" />
@@ -22,6 +21,7 @@
       <li><a href="WaysToHelp.html">Ways To Help</a></li>
       <li><a href="Login.php">Login</a></li>
     </ul>
+    </nav>
 
 <h3>Humane Society of Polk County Logo Here</h3>
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
