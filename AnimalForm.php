@@ -27,7 +27,7 @@ include('connect.php');
 <h4>Non-Profit/Non-Kill Animal Shelter</h4>
 </header>
 <body>
-  <div>
+  <div class="afsidebar">
   <span class="lfbg" id="lfbg">
   <form action="logout.php" class="loginform">
   <span class="lfdesc" id="lfdesc"><br>
