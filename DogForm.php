@@ -10,6 +10,8 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
 <html>
 <header>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Humane Society of Crookston, MN</title>
 <link id="theme" href="MainTemplate.css" rel="stylesheet" type="text/css">
 <script src="DarkLightMode.js" type=text/javascript></script>

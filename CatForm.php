@@ -1,24 +1,14 @@
 <?php
 include('session.php');
-?>
+include('connect.php');?>
 <!doctype html>
 <!--Need to get the Ways to help page created.  Need to start working on making forms with PHP to add data for animals.  Need to finish working on Gallery.  Gallery needs slideshow added to all animals pulled from database as well as get galleryfunction page updated, fine tuned and pulled from database.  Add pagination to gallery pages?  Need to create a login for users to login and submit data.  All around clean up site.  Start working on new logo for Humane Society?-->
 <html>
 <header>
-<?php
-//Use this to connect to server
-$servername = "localhost";
-$username = "Adam";
-$password = "Sund3r09!";
-$dbname = "hsdb";
 
-//Create Connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-if (!$conn){
-    die("Connection Failed: ".mysqli_connect_error());
-}
-?>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Humane Society of Crookston, MN</title>
 <link id="theme" href="MainTemplate.css" rel="stylesheet" type="text/css">
 <script src="DarkLightMode.js" type=text/javascript></script>

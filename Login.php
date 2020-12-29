@@ -2,6 +2,8 @@
 <doctype html>
 <header>
 <meta charset ="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link id = "theme" href = "MainTemplate.css" rel="stylesheet" type="text/css">
 <title>Humane Society of Polk County Login Page</title>
 <script src="DarkLightMode.js" type=text/javascript></script>
