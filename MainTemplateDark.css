@@ -528,6 +528,12 @@ header, section, footer, aside, article, figure {
 	padding: 10px 10px;
 	border-radius: 15px;
 }
+textarea{
+	width: 75%;
+	display: inherit;
+	margin: 0px;
+	padding: 0px;
+}
 .button1{
 	font-size: 14px;
 	display: inline;

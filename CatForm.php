@@ -35,7 +35,7 @@ include('connect.php');?>
 <form class="loginform" action="CatFormAction.php" method="post" enctype="multipart/form-data">
       <span class=lfdesc><h3>Welcome <?php echo $login_session; ?></h3></span>
         Name:&nbsp;<input type="text" name="CatName" id="CatName" required></br>
-        </br>&nbsp;&nbsp;&nbsp;Bio:&nbsp;&nbsp;<textarea  name="CatBio" id="CatBio" rows="5" cols="40" required></textarea></br>
+        </br>&nbsp;&nbsp;&nbsp;Bio:&nbsp;&nbsp;<textarea  name="CatBio" id="CatBio" rows="5" required></textarea></br>
         Good with Dogs:<input type="radio" id="yes" name="GoodwDogs" value="yes" required>
         <label for="yes">Yes</label>
         <input type="radio" id="no" name="GoodwDogs" value="no">
