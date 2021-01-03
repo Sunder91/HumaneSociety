@@ -29,7 +29,7 @@ body {
 }
 
 header {
-	background-color: rgba(169, 169, 169, 0.6);
+	background-color: rgb(169, 169, 169, 0.6);
 	color:black;
 	height: auto;
 	padding-bottom:10px;
@@ -40,7 +40,7 @@ header {
 	
     @media screen and (max-width:900px){
 	header{
-	background-color:rgba(169, 169, 169, 0.6);
+	background-color:rgb(169, 169, 169, 0.6);
 	color:black;
 	height: auto;
 	overflow: auto;
@@ -50,7 +50,7 @@ header {
 }
 
 .sidebar1 {
-	background-color:rgba(191, 191, 191, 0.6);
+	background-color:rgb(191, 191, 191, 0.6);
 	color: black;
 	float: left;
 	width: 30%;
@@ -59,9 +59,9 @@ header {
 	margin-bottom: 5px;
 	border-radius: 15px;
 }
-    @media screen and (max-width: 1200px){ 
+    @media screen and (max-width:900px){ 
 .sidebar1 {
-	background-color:rgba(245, 245, 245, 0.6);
+	background-color:rgb(245, 245, 245, 0.6);
 	color: black;
 	float: left;
 	width: 100%;
@@ -78,9 +78,9 @@ header {
 	margin: 0px, 0px, 0px, 0px;
 	border-radius: 15px;
 }
-    @media screen and (max-width: 1200px){ 
+    @media screen and (max-width:900px){ 
 .afsidebar {
-	background-color:rgba(192, 192, 192, 0.6);
+	background-color:rgb(192, 192, 192, 0.6);
 	color: black;
 	float: left;
 	width: 100%;
@@ -89,7 +89,7 @@ header {
 	}
 }
 .midbody {
-	background-color:rgba(192, 192, 192, 0.6);
+	background-color:rgb(192, 192, 192, 0.6);
 	color: black;
 	float: left;
 	width: 30%;
@@ -101,9 +101,9 @@ header {
 	padding-left: 5px;
 	border-radius: 15px;
 }
-    @media screen and (max-width: 1200px){
+    @media screen and (max-width:900px){
 .midbody {
-	background-color:rgba(245, 245, 245, 0.6);
+	background-color:rgb(245, 245, 245, 0.6);
 	color: black;
 	float: left;
 	width: 100%;
@@ -116,7 +116,7 @@ header {
 }
 
 .sidebar2 {
-	background-color:rgba(192, 192, 192, 0.6);
+	background-color:rgb(192, 192, 192, 0.6);
 	color: black;
 	float: right;
 	width: 30%;
@@ -126,9 +126,9 @@ header {
 	padding-left: 5px;
 	border-radius: 15px;
 }
-    @media screen and (max-width:1200px){ /* changed from 900 to better help tablet/mobile workability*/
+    @media screen and (max-width:900px){ /* changed from 900 to better help tablet/mobile workability*/
 .sidebar2 {
-	background-color:rgba(245, 245, 245, 0.6);
+	background-color:rgb(245, 245, 245, 0.6);
 	color: black;
 	float: left;
 	width: 100%;
@@ -282,7 +282,7 @@ nav[role="sub"] a:hover, nav[role="sub"] a:active, nav[role="sub"] a:focus {
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	background-color:rgba(169, 169, 169, 0.6);
+	background-color:rgb(169, 169, 169, 0.6);
 	border-radius: 5px;
 }
 
@@ -499,7 +499,7 @@ header, section, footer, aside, article, figure {
 	margin-bottom: 10px;
 	border-radius: 15px;
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:900px){
 	.lfbg{
 		display: flex;
 		flex-direction: column;
@@ -523,8 +523,7 @@ span.lfdesc{
 }
 .loginform{
 	min-width: 271px;
-	max-width: fit-content;
-	display:flex;
+	display:transparent;
 	float: left;
 	margin: 10px 5px 0px 5px;
 	background-color:transparent;
@@ -533,10 +532,6 @@ span.lfdesc{
 	color: black;
 	padding: 10px 10px;
 	border-radius: 25px;
-}
-textarea{
-	display: flex;
-	max-width: fit-content;
 }
 .button1{
 	font-size: 14px;

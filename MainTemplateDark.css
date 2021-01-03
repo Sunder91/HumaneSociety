@@ -29,7 +29,7 @@ body {
 }
 
 header {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
 	height: auto;
 	padding-bottom:10px;
@@ -40,7 +40,7 @@ header {
 	
     @media screen and (max-width:900px){
 	header{
-  background-color:rgba(0, 0, 0, 0.6);
+  background-color:rgb(0, 0, 0, 0.6);
 	color:white;
 	height: auto;
 	overflow: auto;
@@ -50,7 +50,7 @@ header {
 }
 
 .sidebar1 {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
 	float: left;
 	width: 30%;
@@ -59,9 +59,9 @@ header {
 	margin-bottom: 5px;
 	border-radius: 15px;
 }
-    @media screen and (max-width:1200px){
+    @media screen and (max-width:900px){
 .sidebar1 {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
 	float: left;
 	width: 100%;
@@ -77,9 +77,9 @@ header {
 	margin: 0px, 0px, 0px, 0px;
 	border-radius: 15px;
 }
-    @media screen and (max-width:1200px){ 
+    @media screen and (max-width:900px){ 
 .afsidebar {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgb(0, 0, 0, 0.6);
 	color: black;
 	float: left;
 	width: 100%;
@@ -89,7 +89,7 @@ header {
 	}
 }
 .midbody {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
 	float: left;
 	width: 30%;
@@ -101,9 +101,9 @@ header {
 	padding-left: 5px;
 	border-radius: 15px;
 }
-    @media screen and (max-width:1200px){
+    @media screen and (max-width:900px){
 .midbody {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
 	float: left;
 	width: 100%;
@@ -116,7 +116,7 @@ header {
 }
 
 .sidebar2 {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
 	float: right;
 	width: 30%;
@@ -126,9 +126,9 @@ header {
 	padding-left: 5px;
 	border-radius: 15px;
 }
-    @media screen and (max-width:1200px){
+    @media screen and (max-width:900px){
 .sidebar2 {
-	background-color:rgba(0, 0, 0, 0.6);
+	background-color:rgb(0, 0, 0, 0.6);
 	color: white;
 	float: left;
 	width: 100%;
@@ -484,7 +484,7 @@ header, section, footer, aside, article, figure {
 .lfbg{
 	display: flex;
 	flex-direction: column;
-	background-color: rgba(34, 34, 34, 0.8);
+	background-color: rgb(34, 34, 34, 0.8);
 	color: white;
 	min-width: 271px;
 	max-width: 350px;
@@ -518,8 +518,7 @@ header, section, footer, aside, article, figure {
 }
 .loginform{
 	min-width: 271px;
-	max-width: fit-content;
-	display:flex;
+	display:transparent;
 	float: left;
 	margin: 10px 5px 0px 5px;
 	background-color:transparent;
@@ -528,10 +527,6 @@ header, section, footer, aside, article, figure {
 	color: white;
 	padding: 10px 10px;
 	border-radius: 15px;
-}
-textarea{
-	display: flex;
-	max-width: fit-content;
 }
 .button1{
 	font-size: 14px;
