@@ -523,7 +523,7 @@ span.lfdesc{
 }
 .loginform{
 	min-width: 271px;
-	display:transparent;
+	display:flex;
 	float: left;
 	margin: 10px 5px 0px 5px;
 	background-color:transparent;
