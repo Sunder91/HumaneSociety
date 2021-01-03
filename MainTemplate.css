@@ -534,7 +534,7 @@ span.lfdesc{
 	padding: 10px 10px;
 	border-radius: 25px;
 }
-.commentbox{
+textarea{
 	display: flex;
 	max-width: fit-content;
 }

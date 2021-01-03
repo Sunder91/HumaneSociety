@@ -38,7 +38,7 @@ Need to get dogform page to come back to dogform page after dog is added.  Clean
     <form class="loginform" action="DogFormAction.php" method="post" enctype="multipart/form-data">
     <span class=lfdesc><h4>Welcome <?php echo $login_session; ?></h4></span>
         Name:&nbsp;<input type="text" name="DogName" id="DogName" required></br>
-        </br>&nbsp;&nbsp;&nbsp;Bio:&nbsp;&nbsp;<textarea class="commentbox" name="DogBio" id="DogBio" rows="5" required></textarea></br>
+        </br>&nbsp;&nbsp;&nbsp;Bio:&nbsp;&nbsp;<textarea name="DogBio" id="DogBio" rows="5" cols="40" required></textarea></br>
         Good with Dogs:<input type="radio" id="yes" name="GoodwDogs" value="yes" required>
         <label for="yes">Yes</label>
         <input type="radio" id="no" name="GoodwDogs" value="no">

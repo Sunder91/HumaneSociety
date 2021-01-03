@@ -529,7 +529,7 @@ header, section, footer, aside, article, figure {
 	padding: 10px 10px;
 	border-radius: 15px;
 }
-.commentbox{
+textarea{
 	display: flex;
 	max-width: fit-content;
 }
