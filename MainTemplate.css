@@ -216,14 +216,6 @@ nav[role="main"] li {
 	color:black;
 	}
 }
-    @media screen and (max-width:480px){
-	nav[role="main"] li{ 
-	display:inline;
-	font-family:Arial;
-	font-size:12px;
-	color:black;
-	}
-}
 nav[role="sub"] li {
 	display: block;
 	color:black;
@@ -237,16 +229,6 @@ nav[role="sub"] li {
 	color:black;
 	}
 }
-    @media screen and (max-width:480px){
-	nav[role="sub"] li{ 
-	display:block;
-	font-family:Arial;
-	font-size:16px;
-	font-weight: bold;
-	color:black;
-	}
-}
-
 nav[role="main"] a, nav[role="main"] a:visited { 
 	padding: 5px 5px 5px 5px;
 	display:inherit;
