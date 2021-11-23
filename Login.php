@@ -41,7 +41,7 @@
          ?></span>
         </span>
         <pre>Username:<input type ="text" name="Uname" id="Uname" placeholder="Enter your Username" required ></pre>
-        <pre>Password:<input type = "text" name="Pswrd" id="Pswrd" placeholder="Enter your Password" required></pre>
+        <pre>Password:<input type = "password" name="Pswrd" id="Pswrd" placeholder="Enter your Password" required></pre>
         <input class="button1" type="submit" value="submit" name="submit">
         <input class="button2" type="button" name="RegistryShow" value="New users click here" onclick="LoginRegistry()">
         </form>
@@ -52,7 +52,7 @@
         <pre>  Last Name:<input type="text" name="LName" id="Lname" placeholder="Last Name" required ></pre>
         <pre>      Email:<input type="text" name="UEmail" id="UEmail" placeholder="Email" required ></pre>
         <pre>  User Name:<input type="text" name="Uname" id="Uname" placeholder="User Name" required ></pre>
-        <pre>   Password:<input type="text" name="Pswrd" id="Pswrd" placeholder="Password" required ></pre>
+        <pre>   Password:<input type="password" name="Pswrd" id="Pswrd" placeholder="Password" required ></pre>
         <br>Please enter the password given to you below to register.<br>
         <pre>Access Code:<input type="text" name="VPswrd" id="VPswrd" placeholder="Enter validation code" required ></pre>
         <input class="button1" type="submit" value="submit" name="submit">
