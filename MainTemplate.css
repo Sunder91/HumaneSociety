@@ -470,6 +470,7 @@ header, section, footer, aside, article, figure {
 	font-style: italic;
 
 }
+
 .lfbg{
 	display:flex;
 	flex-direction:column;
