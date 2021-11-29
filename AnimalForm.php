@@ -42,7 +42,10 @@ include('connect.php');
         <li><a href="DogForm.php">Edit Dogs</a></li>
         <li><a href="CatForm.php">Edit Cats</a></li>
         <li><a href="editpagedetails.php">Edit Page</a></li>
-        Note: Edit page currently doesnt lead anywhere.
+        Note: Edit page currently doesnt lead anywhere. Also cat form does work, however the page is being
+        used as a placeholder to show image placement so php functonality is not currently in there. Edit dog page and Dogs in the 
+        nav bar are your best bets to see my functioning php.  Also images more than 1mb do not load due to the way image processing
+        takes place.  I know it isn't the proper way to handle it, but I just wanted to make it work for the time being.
     </ul>
 </nav></span><br>
 
