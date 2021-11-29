@@ -57,7 +57,8 @@
         <br>Please enter the password given to you below to register.<br>
         <pre>Access Code:<input type="text" name="VPswrd" id="VPswrd" placeholder="Enter validation code" required ></pre>
         <input class="button1" type="submit" value="submit" name="submit">
-        <input class="button2" type="button" value="Already Registered? Click Here!" onclick ="LoginRegistry()">
+        <input class="button2" type="button" value="Already Registered? Click Here!" onclick ="LoginRegistry()"><br>
+        Use Register for code to create an account
 
 <script>//want to get this to load from a seperate file on its own.
     function LoginRegistry(){
